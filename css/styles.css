@@ -1,3 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  z-index: 99;
+  padding: 0.5rem;
+}
+@media (min-width: 1000px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    height: 8%;
+    padding: 0;
+    background-color: #222222;
+  }
+}
+.header__nav {
+  display: flex;
+  height: 3.75rem;
+  align-items: center;
+  padding: 3% 5%;
+  background-color: #ffffff;
+}
+@media (min-width: 1000px) {
+  .header__nav {
+    width: 75%;
+    position: absolute;
+    top: 2rem;
+    border-radius: 0.2rem;
+  }
+}
+.header__nav #header__menu-toggle {
+  display: none;
+}
+.header__nav .header__menu--container {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+@media (min-width: 1000px) {
+  .header__nav .header__menu--container {
+    display: none;
+  }
+}
+.header__nav .header__menu--container .menu-button,
+.header__nav .header__menu--container .menu-button::before,
+.header__nav .header__menu--container .menu-button::after {
+  display: block;
+  background-color: black;
+  position: absolute;
+  height: 2.5px;
+  width: 22px;
+  border-radius: 2px;
+}
+.header__nav .header__menu--container .menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+.header__nav .header__menu--container .menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+.header__nav .nav__logo--container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.header__nav .nav__logo--container img {
+  cursor: pointer;
+  height: 2.2rem;
+  display: inline-block;
+  margin-left: 2rem;
+  box-shadow: 0px 4px 12px -5px grey;
+}
+.header__nav .nav__logo--container .text--container {
+  cursor: pointer;
+  margin-left: 1rem;
+  display: inline-block;
+}
+.header__nav .text--container h2 {
+  font-family: Archivo;
+  font-size: 0.8rem;
+}
+.header__nav .header__logo--title {
+  font-weight: 800;
+}
+.header__nav .header__logo--subtitle {
+  font-weight: 400;
+}
+.header__nav .header__nav--list {
+  box-shadow: 0px 5px 6px -2px grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  list-style-type: none;
+  margin-top: 4.5rem;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+@media (min-width: 1000px) {
+  .header__nav .header__nav--list {
+    flex-direction: row;
+    box-shadow: none;
+    margin-top: 0;
+    position: unset;
+  }
+}
+.header__nav .header__nav--list .header__nav--item {
+  display: flex;
+  width: 100%;
+  color: white;
+  background-color: white;
+  overflow: hidden;
+  text-decoration: none;
+}
+@media (min-width: 1000px) {
+  .header__nav .header__nav--list .header__nav--item {
+    margin: 0 1rem;
+  }
+}
+.header__nav .header__nav--list .header__nav--item:hover {
+  text-decoration: underline solid #08A6E4;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 1.4rem;
+}
+.header__nav .header__nav--list .header__nav-link {
+  position: relative;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 3.28px;
+  text-decoration: none;
+  color: #A5A5A5;
+  transition: color 0.3s ease;
+}
+.header__nav .header__nav--list .header__nav-link:hover {
+  color: black;
+}
+.header__nav .header__nav--icons {
+  width: 30%;
+  text-align: right;
+}
+.header__nav .header__nav--icons > li {
+  right: 1rem;
+  display: inline-block;
+  list-style: none;
+  cursor: pointer;
+}
+.header__nav .header__nav--icons > li .fa {
+  font-size: 25px;
+}
+.header__nav .header__nav--icons > li:not(:last-child) {
+  margin-right: 1rem;
+}
+.header #header__menu-toggle:checked + .header__menu--container .menu-button::before {
+  margin-top: 0px;
+  transition: transform 0.3s ease;
+  transform: rotate(45deg);
+}
+.header #header__menu-toggle:checked + .header__menu--container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+.header #header__menu-toggle:checked + .header__menu--container .menu-button::after {
+  margin-top: 0px;
+  transition: transform 0.3s ease;
+  transform: rotate(135deg);
+}
+.header #header__menu-toggle ~ .header__nav--list li {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+@media (min-width: 1000px) {
+  .header #header__menu-toggle ~ .header__nav--list li {
+    height: unset;
+  }
+}
+.header #header__menu-toggle:checked ~ .header__nav--list li {
+  height: 2.5em;
+  padding: 0.5rem 0 0.5rem 1.8rem;
+}
+.header #header__menu-toggle:checked ~ .header__nav--list li a {
+  font-size: 16px;
+  color: black;
+  font-family: Archivo;
+  font-weight: 800;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;
@@ -6,6 +204,11 @@ html, * {
 
 body {
   min-width: 320px;
+}
+
+.main {
+  background-color: #333333;
+  height: 500px;
 }
 
 /*# sourceMappingURL=styles.css.map */

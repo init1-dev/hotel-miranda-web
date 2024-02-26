@@ -4,21 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hotel Miranda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="module" src="./js/main.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            menu
-            <ul>
-                <li>About Us</li>
-                <li>Rooms</li>
-                <li>Offers</li>
-                <li>Contact </li>
-            </ul>
-        </nav>
-    </header>
+    <header class="header">
+            <nav class="header__nav">
+                <input id="header__menu-toggle" type="checkbox" />
+                
+                <label class='header__menu--container' for="header__menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
 
-    <main>
+                <div class="nav__logo--container">
+                    <img class="img" src="./assets/h.png" alt="logo">
+                    <div class="text--container">
+                        <h2 class="header__logo--title">HOTEL</h2>
+                        <h2 class="header__logo--subtitle">MIRANDA</h2>
+                    </div>
+                </div>
+                
+                <ul class="header__nav--list">
+                    <li class="header__nav--item">
+                        <a class="header__nav-link" href="#">Abous Us</a>
+                    </li>
+                    <li class="header__nav--item">
+                        <a class="header__nav-link" href="#">Rooms</a>
+                    </li>
+                    <li class="header__nav--item">
+                        <a class="header__nav-link" href="#">Offers</a>
+                    </li>
+                    <li class="header__nav--item">
+                        <a class="header__nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="header__nav--icons">
+                    <li><i class="fa fa-user" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-search" aria-hidden="true"></i></li>
+                </ul>
+            </nav>
+
+    </header>
+    
+    <main class="main">
         Check availability
     </main>
 

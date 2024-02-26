@@ -1,0 +1,14 @@
+@media (min-width: 1000px) {
+        
+}
+
+.main {
+    background-color: #333333;
+    // height: 500px;
+
+    padding: 7rem 1rem 5rem 1rem;
+
+    @media (min-width: 1000px) {
+        padding: 12rem 15rem 5rem 15rem;
+    }
+}

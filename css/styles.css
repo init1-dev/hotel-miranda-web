@@ -219,6 +219,16 @@
   font-weight: 800;
 }
 
+.main {
+  background-color: #333333;
+  padding: 7rem 1rem 5rem 1rem;
+}
+@media (min-width: 1000px) {
+  .main {
+    padding: 12rem 15rem 5rem 15rem;
+  }
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;
@@ -227,11 +237,6 @@ html, * {
 
 body {
   min-width: 320px;
-}
-
-.main {
-  background-color: #333333;
-  height: 500px;
 }
 
 /*# sourceMappingURL=styles.css.map */

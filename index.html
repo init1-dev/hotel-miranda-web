@@ -10,58 +10,73 @@
 </head>
 <body>
     <header class="header">
-            <nav class="header__nav">
-                <input id="header__menu-toggle" type="checkbox" />
-                
-                <label class='header__menu--container' for="header__menu-toggle">
-                    <div class='menu-button'></div>
-                </label>
+        <p class="header__slogan">We Make Your Feel Comfortable</p>
+        <nav class="header__nav">
+            <input id="header__menu-toggle" type="checkbox" />
+            
+            <label class='header__menu--container' for="header__menu-toggle">
+                <div class='menu-button'></div>
+            </label>
 
-                <div class="nav__logo--container">
-                    <img class="img" src="./assets/h.png" alt="logo">
-                    <div class="text--container">
-                        <h2 class="header__logo--title">HOTEL</h2>
-                        <h2 class="header__logo--subtitle">MIRANDA</h2>
-                    </div>
+            <div class="nav__logo--container">
+                <img class="img" src="./assets/h.png" alt="logo">
+                <div class="text--container">
+                    <h2 class="header__logo--title">HOTEL</h2>
+                    <h2 class="header__logo--subtitle">MIRANDA</h2>
                 </div>
-                
-                <ul class="header__nav--list">
-                    <li class="header__nav--item">
-                        <a class="header__nav-link" href="#">Abous Us</a>
-                    </li>
-                    <li class="header__nav--item">
-                        <a class="header__nav-link" href="#">Rooms</a>
-                    </li>
-                    <li class="header__nav--item">
-                        <a class="header__nav-link" href="#">Offers</a>
-                    </li>
-                    <li class="header__nav--item">
-                        <a class="header__nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+            </div>
+            
+            <ul class="header__nav--list">
+                <li class="header__nav--item">
+                    <a class="header__nav-link" href="#">Abous Us</a>
+                </li>
+                <li class="header__nav--item">
+                    <a class="header__nav-link" href="#">Rooms</a>
+                </li>
+                <li class="header__nav--item">
+                    <a class="header__nav-link" href="#">Offers</a>
+                </li>
+                <li class="header__nav--item">
+                    <a class="header__nav-link" href="#">Contact</a>
+                </li>
+            </ul>
 
-                <ul class="header__nav--icons">
-                    <img src="assets/person.svg" alt="">
-                    <img src="assets/search.svg" alt="">
-                </ul>
-            </nav>
+            <ul class="header__nav--icons">
+                <img src="assets/person.svg" alt="">
+                <img src="assets/search.svg" alt="">
+            </ul>
+        </nav>
     </header>
 
     <main class="main">
-        <p>THE ULTIMATE LUXURY EXPERIENCE</p>
-        <div>
-            <p>The Perfect</p>
-            <p>Base For You</p>
+        <div class="main__container">
+            <div class="main__upper">
+                <p class="main__upper--text">THE ULTIMATE LUXURY</p>
+                <p class="main__upper--text">EXPERIENCE</p>
+            </div>
+    
+            <div class="main__middle">
+                <p class="main__middle--text">The Perfect</p>
+                <p class="main__middle--text">Base For You</p>
+            </div>
+    
+            <div class="main__buttons">
+                <button class="color">TAKE A TOUR</button>
+                <button class="dark">LEARN MORE</button>
+            </div>
         </div>
-        <div>
-            <button>TAKE A TOUR</button>
-            <button>LEARN MORE</button>
-        </div>
-        <div>
-            <form action="">
-                <input type="date" name="" id="">
-                <input type="date" name="" id="">
-                <button type="submit">CHECK AVAILABILITY</button>
+
+        <div class="main__form">
+            <form id="check-availability-form" action="">
+                <div class="input--container">
+                    <p class="input--text">Arrival Date</p>
+                    <input class="input" type="date" name="arrival" id="arrival" value="2020-03-24">
+                </div>
+                <div class="input--container">
+                    <p class="input--text">Departure Date</p>
+                    <input class="input" type="date" name="departure" id="departure" value="2020-03-30">
+                </div>
+                <button class="submit" type="submit">CHECK AVAILABILITY</button>
             </form>
         </div>
     </main>

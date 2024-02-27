@@ -13,6 +13,17 @@
         background-color: #222222;
     }
 
+    &__slogan {
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 15px;
+        position: absolute;
+        top: 8px;
+        left: 12.5%;
+        color: white;
+        z-index: 1;
+    }
+
     &__nav {
         display: flex;
         height: 3.75rem;
@@ -26,7 +37,6 @@
             padding: 1.5% 5% 1.5% 0.8rem;
             position: absolute;
             top: 2rem;
-            border-radius: 0.2rem;
         }
 
         #header__menu-toggle {

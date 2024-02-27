@@ -15,6 +15,16 @@
     background-color: #222222;
   }
 }
+.header__slogan {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 15px;
+  position: absolute;
+  top: 8px;
+  left: 12.5%;
+  color: white;
+  z-index: 1;
+}
 .header__nav {
   display: flex;
   height: 3.75rem;
@@ -29,7 +39,6 @@
     padding: 1.5% 5% 1.5% 0.8rem;
     position: absolute;
     top: 2rem;
-    border-radius: 0.2rem;
   }
 }
 .header__nav #header__menu-toggle {
@@ -237,12 +246,166 @@
 }
 
 .main {
-  background-color: #333333;
-  padding: 7rem 1rem 5rem 1rem;
+  padding: 4rem 0rem 5rem 0rem;
 }
 @media (min-width: 1000px) {
   .main {
-    padding: 12rem 15rem 5rem 15rem;
+    margin-top: 4rem;
+    padding: 0;
+  }
+}
+.main__container {
+  padding: 5rem 1rem 4rem 1rem;
+  background-color: #333333;
+}
+@media (min-width: 1000px) {
+  .main__container {
+    padding: 7rem 0rem 5rem 20%;
+  }
+}
+.main__upper {
+  letter-spacing: 3px;
+}
+@media (min-width: 1000px) {
+  .main__upper {
+    display: flex;
+  }
+}
+.main__upper--text {
+  font-family: Archivo;
+  font-weight: 700;
+  font-size: 13px;
+  color: white;
+}
+.main__upper--text:not(:last-child) {
+  margin-right: 5px;
+}
+@media (min-width: 1000px) {
+  .main__upper--text {
+    font-size: 14px;
+  }
+}
+.main__middle {
+  margin-top: 1.5rem;
+}
+.main__middle--text {
+  font-family: Old Standard TT;
+  font-weight: 400;
+  font-size: 56px;
+  color: white;
+}
+@media (min-width: 1000px) {
+  .main__middle--text {
+    font-size: 85px;
+  }
+}
+@media (min-width: 1000px) {
+  .main__buttons {
+    display: flex;
+  }
+}
+.main__buttons button {
+  display: block;
+  font-family: Archivo;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0.9rem 2.5rem 0.9rem 2.5rem;
+  color: white;
+  margin-top: 1.5rem;
+}
+.main__buttons button.color {
+  background-color: #BEAD8E;
+  border: 2px solid #BEAD8E;
+}
+@media (min-width: 1000px) {
+  .main__buttons button.color {
+    margin-right: 1rem;
+  }
+}
+.main__buttons button.dark {
+  background-color: #333333;
+  border: 2px solid #676767;
+}
+.main__form {
+  background-color: #222222;
+  padding: 2rem 1.5rem 2rem 1rem;
+}
+@media (min-width: 1000px) {
+  .main__form {
+    padding: 1rem 0rem 1rem 10%;
+  }
+}
+@media (min-width: 1350px) {
+  .main__form {
+    padding: 1rem 0rem 1rem 20%;
+  }
+}
+@media (min-width: 1000px) {
+  .main__form #check-availability-form {
+    display: flex;
+    align-items: center;
+  }
+}
+.main__form #check-availability-form .input--container {
+  display: block;
+  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 1000px) {
+  .main__form #check-availability-form .input--container {
+    width: 17rem;
+    margin-bottom: 0;
+    margin-right: 1rem;
+    padding-left: 0;
+  }
+}
+.main__form #check-availability-form .input--container .input--text {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 1rem;
+}
+.main__form #check-availability-form .input--container .input {
+  all: unset;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  color: #686868;
+  background-image: url("../assets/calendar.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  padding: 0.5rem 0rem 0.5rem 1.5rem;
+  width: 100%;
+  border-bottom: 2px solid #BEAD8E;
+}
+.main__form #check-availability-form .input--container input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.main__form #check-availability-form .submit {
+  display: block;
+  font-family: Archivo;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0.9rem 2rem 0.9rem 2rem;
+  color: white;
+  background-color: #BEAD8E;
+  border: 2px solid #BEAD8E;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+}
+@media (min-width: 1000px) {
+  .main__form #check-availability-form .submit {
+    margin-top: 0;
+    padding: 0.9rem 2rem 0.9rem 2rem;
+    height: 50px;
+    width: 15rem;
+  }
+}
+@media (min-width: 1350px) {
+  .main__form #check-availability-form .submit {
+    margin-left: 5rem;
   }
 }
 

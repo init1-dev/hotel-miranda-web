@@ -3,12 +3,176 @@
 }
 
 .main {
-    background-color: #333333;
-    // height: 500px;
 
-    padding: 7rem 1rem 5rem 1rem;
+    padding: 4rem 0rem 5rem 0rem;
 
     @media (min-width: 1000px) {
-        padding: 12rem 15rem 5rem 15rem;
+        margin-top: 4rem;
+        padding: 0;
+    }
+
+    &__container {
+        padding: 5rem 1rem 4rem 1rem;
+        background-color: #333333;
+
+        @media (min-width: 1000px) {
+            padding: 7rem 0rem 5rem 20%;
+        }
+    }
+
+    &__upper {
+        letter-spacing: 3px;
+        
+        @media (min-width: 1000px) {
+            display: flex;
+        }
+
+        &--text {
+            font-family: Archivo;
+            font-weight: 700;
+            font-size: 13px;
+            color: white;
+
+            &:not(:last-child) {
+                margin-right: 5px;
+            }
+
+            @media (min-width: 1000px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__middle {
+        margin-top: 1.5rem;
+
+        &--text {
+            font-family: Old Standard TT;
+            font-weight: 400;
+            font-size: 56px;
+            color: white;
+
+            @media (min-width: 1000px) {
+                font-size: 85px;
+            }
+        }
+    }
+
+    &__buttons {
+
+        @media (min-width: 1000px) {
+            display: flex;
+        }
+
+        button {
+            display: block;
+            font-family: Archivo;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 0.9rem 2.5rem 0.9rem 2.5rem;
+            color: white;
+            margin-top: 1.5rem;
+
+            &.color {
+                background-color: #BEAD8E;
+                
+                border: 2px solid #BEAD8E;
+
+                @media (min-width: 1000px) {
+                    margin-right: 1rem;
+                }
+            }
+    
+            &.dark {
+                background-color: #333333;
+                border: 2px solid #676767;
+            }
+        }
+
+    }
+
+    &__form {
+        background-color: #222222;
+        padding: 2rem 1.5rem 2rem 1rem;
+
+        @media (min-width: 1000px) {
+            padding: 1rem 0rem 1rem 10%;
+        }
+
+        @media (min-width: 1350px) {
+            padding: 1rem 0rem 1rem 20%;
+        }
+
+        #check-availability-form {
+            
+            @media (min-width: 1000px) {
+                display: flex;
+                align-items: center;
+            }
+
+            .input--container {
+                display: block;
+                padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+                margin-bottom: 1.5rem;
+    
+                @media (min-width: 1000px) {
+                    width: 17rem;
+                    margin-bottom: 0;
+                    margin-right: 1rem;
+                    padding-left: 0;
+                }
+    
+                .input--text {
+                    font-family: Roboto;
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: white;
+                    margin-bottom: 1rem;
+                }
+    
+                .input {
+                    all: unset;
+                    font-family: Roboto;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #686868;
+                    background-image: url('../assets/calendar.png');
+                    background-position: left;
+                    background-repeat: no-repeat;
+                    background-size: 16px;
+                    padding: 0.5rem 0rem 0.5rem 1.5rem;
+                    width: 100%;
+                    border-bottom: 2px solid #BEAD8E;
+                }
+    
+                input[type="date"]::-webkit-calendar-picker-indicator {
+                    display: none;
+                }
+            }
+    
+            .submit {
+                display: block;
+                font-family: Archivo;
+                font-weight: 600;
+                font-size: 14px;
+                padding: 0.9rem 2rem 0.9rem 2rem;
+                color: white;
+                background-color: #BEAD8E;
+                border: 2px solid #BEAD8E;
+                margin-top: 2rem;
+                margin-left: 0.5rem;
+
+                @media (min-width: 1000px) {
+                    margin-top: 0;
+                    padding: 0.9rem 2rem 0.9rem 2rem;
+                    height: 50px;
+                    width: 15rem;
+                }
+
+                @media (min-width: 1350px) {
+                    margin-left: 5rem;
+                }
+            }
+        }
     }
 }

@@ -1,12 +1,36 @@
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
+const foodMenuSwipper = new Swiper('#menu-swipper', {
+    slidesPerView: 1,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
     },
+    spaceBetween: 40,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        1000: {
+            slidesPerView: 2,
+            spaceBetween: 100,
+            autoHeight: true,
+        }
+    }
+});
+
+const foodImageSwipper = new Swiper('#images-swipper', {
+    slidesPerView: 1,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        1000: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            autoHeight: true,
+        }
+    }
 });
 
 document.addEventListener("DOMContentLoaded", () => {

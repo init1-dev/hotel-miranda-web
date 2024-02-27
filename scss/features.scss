@@ -1,0 +1,44 @@
+.features {
+    background-color: #222222;
+
+    &__container {
+        display: block;
+        text-align: center;
+        padding: 2.5rem;
+
+        .feature {
+            display: block;
+
+            &:not(:last-child) {
+                margin-bottom: 4rem;
+            }
+
+            .feature__image {
+                height: 80px;
+            }
+
+            .feature__title, .simbol, .feature__subtitle {
+                font-family: Roboto;
+                font-weight: 700;
+            }
+
+            .feature__title {
+                margin-top: 1rem;
+                margin-bottom: -8px;
+                font-size: 60px;
+                color: white;
+            }
+
+            .simbol {
+                font-size: 16px;
+
+            }
+
+            .feature__subtitle {
+                font-size: 16px;
+                color: #999999;
+            }
+        }
+    }
+
+}

@@ -103,7 +103,7 @@
 
         .swiper-button-prev {
             left: auto;
-            top: 650px;
+            top: 590px;
             right: var(--swiper-navigation-sides-offset, 60px);
             
             @media (min-width: 1000px) {
@@ -113,7 +113,7 @@
         }
         
         .swiper-button-next {
-            top: 650px;
+            top: 590px;
             right: 20px;
 
             @media (min-width: 1000px) {

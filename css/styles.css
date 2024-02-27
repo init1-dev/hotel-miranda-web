@@ -380,9 +380,6 @@
   width: 100%;
   border-bottom: 2px solid #BEAD8E;
 }
-.main__form #check-availability-form .input--container input[type=date]::-webkit-calendar-picker-indicator {
-  display: none;
-}
 .main__form #check-availability-form .submit {
   display: block;
   font-family: Archivo;

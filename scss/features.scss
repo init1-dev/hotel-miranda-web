@@ -1,20 +1,55 @@
 .features {
-    background-color: #222222;
+    margin-top: 2rem;
+    margin-bottom: 3 rem;
+    
+    @media (min-width: 1000px) {
+        margin: 2rem 12% 0 12%;
+        margin-bottom: 5rem;
+    }
+
+    @media (min-width: 1350px) {
+        margin: 2rem 20% 0 20%;
+    }
 
     &__container {
+        background-color: #222222;
         display: block;
         text-align: center;
         padding: 2.5rem;
+
+        @media (min-width: 1000px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5rem;
+        }
+
+        @media (min-width: 1350px) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+        }
 
         .feature {
             display: block;
 
             &:not(:last-child) {
                 margin-bottom: 4rem;
+
+                @media (min-width: 1000px) {
+                    margin-bottom: 0;
+                }
             }
 
             .feature__image {
                 height: 80px;
+
+                @media (min-width: 1000px) {
+                    height: 70px;
+                }
+
+                @media (min-width: 1350px) {
+                    height: 80px;
+                }
             }
 
             .feature__title, .simbol, .feature__subtitle {

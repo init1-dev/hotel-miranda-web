@@ -775,7 +775,8 @@
 }
 .ourFoods #menu-swipper .swiper-button-prev {
   left: auto;
-  top: 590px;
+  top: unset;
+  bottom: 10px;
   right: var(--swiper-navigation-sides-offset, 60px);
 }
 @media (min-width: 1000px) {
@@ -785,8 +786,9 @@
   }
 }
 .ourFoods #menu-swipper .swiper-button-next {
-  top: 590px;
+  top: unset;
   right: 20px;
+  bottom: 10px;
 }
 @media (min-width: 1000px) {
   .ourFoods #menu-swipper .swiper-button-next {

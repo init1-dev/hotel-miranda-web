@@ -746,7 +746,7 @@
 .ourFoods #menu-swipper {
   margin-top: 2rem;
   height: 100%;
-  padding-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 @media (min-width: 1000px) {
   .ourFoods #menu-swipper {
@@ -754,12 +754,16 @@
     padding-bottom: 3rem;
   }
 }
+.ourFoods #menu-swipper .swiper-wrapper {
+  padding-bottom: 3rem;
+}
 .ourFoods #menu-swipper .swiper-slide img {
   height: 120px;
   width: 120px;
   object-fit: cover;
 }
 .ourFoods #menu-swipper .swiper-button-next, .ourFoods #menu-swipper .swiper-button-prev {
+  margin-top: 2rem;
   color: black;
   background-color: #F8F8F8;
   border: 1px solid grey;
@@ -776,7 +780,7 @@
 .ourFoods #menu-swipper .swiper-button-prev {
   left: auto;
   top: unset;
-  bottom: 10px;
+  bottom: 0px;
   right: var(--swiper-navigation-sides-offset, 60px);
 }
 @media (min-width: 1000px) {
@@ -788,7 +792,7 @@
 .ourFoods #menu-swipper .swiper-button-next {
   top: unset;
   right: 20px;
-  bottom: 10px;
+  bottom: 0px;
 }
 @media (min-width: 1000px) {
   .ourFoods #menu-swipper .swiper-button-next {
@@ -808,6 +812,10 @@
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
+}
+.ourFoods #menu-swipper .menu-swipper--content .swiper--item:hover, .ourFoods #menu-swipper .menu-swipper--content .swiper--item:hover div > p {
+  background-color: #222222;
+  color: white;
 }
 .ourFoods #menu-swipper .menu-swipper--content .swiper--item .img {
   margin-right: 1.2rem;

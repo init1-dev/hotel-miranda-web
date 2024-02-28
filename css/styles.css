@@ -603,12 +603,6 @@
 @media (min-width: 1000px) {
   #rooms {
     overflow: visible;
-    margin: 0 12% 5rem 12%;
-  }
-}
-@media (min-width: 1350px) {
-  #rooms {
-    margin: 0 20% 3rem 20%;
   }
 }
 #rooms .title p {
@@ -629,6 +623,11 @@
   margin-top: 2rem;
   color: #222222;
 }
+@media (min-width: 1000px) {
+  #rooms .title h2 {
+    margin-left: 1%;
+  }
+}
 #rooms #rooms-swiper {
   width: 100%;
   margin-top: 0.5rem;
@@ -636,6 +635,7 @@
 }
 @media (min-width: 1000px) {
   #rooms #rooms-swiper {
+    width: 98vw;
     margin-top: 0;
     padding-bottom: 0;
   }
@@ -653,6 +653,8 @@
 @media (min-width: 1000px) {
   #rooms #rooms-swiper .swiper-slide img {
     width: 100%;
+    max-height: 350px;
+    object-fit: cover;
   }
 }
 #rooms #rooms-swiper .swiper-button-prev {
@@ -663,8 +665,9 @@
 }
 @media (min-width: 1000px) {
   #rooms #rooms-swiper .swiper-button-prev {
-    top: 30px;
-    right: var(--swiper-navigation-sides-offset, 60px);
+    top: 130px;
+    right: unset;
+    left: var(--swiper-navigation-sides-offset, 60px);
   }
 }
 #rooms #rooms-swiper .swiper-button-prev.swiper-button-disabled {
@@ -677,8 +680,8 @@
 }
 @media (min-width: 1000px) {
   #rooms #rooms-swiper .swiper-button-next {
-    top: 30px;
-    right: var(--swiper-navigation-sides-offset, 0px);
+    top: 130px;
+    right: var(--swiper-navigation-sides-offset, 225px);
   }
 }
 #rooms #rooms-swiper .slide-title, #rooms #rooms-swiper .slide-info {

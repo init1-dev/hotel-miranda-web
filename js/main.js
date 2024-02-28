@@ -2,17 +2,22 @@ const roomSwiper = new Swiper("#rooms-swiper", {
     grabCursor: true,
     spaceBetween: 40,
     slidesPerView: 1,
+    initialSlide: 1,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
     breakpoints: {
         1000: {
+            spaceBetween: 20,
+            addSlidesBefore: 1,
             slidesPerView: 3,
             centeredSlides: true,
         }
     }
 });
+
+console.log(roomSwiper);
 
 const coreFeaturesSwiper = new Swiper('#coreFeatures-swipper', {
     slidesPerView: 1,

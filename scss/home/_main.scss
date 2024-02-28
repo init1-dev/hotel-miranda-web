@@ -13,7 +13,7 @@
 
     &__container {
         padding: 5rem 1rem 4rem 1rem;
-        background-color: #333333;
+        background-color: $mainLightBlack;
 
         @media (min-width: 1000px) {
             padding: 7rem 0rem 5rem 20%;
@@ -73,10 +73,14 @@
             color: white;
             margin-top: 1.5rem;
 
+            &:hover {
+                cursor: pointer;
+            }
+
             &.color {
-                background-color: #BEAD8E;
+                background-color: $main;
                 
-                border: 2px solid #BEAD8E;
+                border: 2px solid $main;
 
                 @media (min-width: 1000px) {
                     margin-right: 1rem;
@@ -84,7 +88,7 @@
             }
     
             &.dark {
-                background-color: #333333;
+                background-color: $mainLightBlack;
                 border: 2px solid #676767;
             }
         }
@@ -92,7 +96,7 @@
     }
 
     &__form {
-        background-color: #222222;
+        background-color: $mainBlack;
         padding: 2rem 1.5rem 2rem 1rem;
 
         @media (min-width: 1000px) {
@@ -144,7 +148,11 @@
                     width: 100%;
                     background-color: unset;
                     border: unset;
-                    border-bottom: 2px solid #BEAD8E;
+                    border-bottom: 2px solid $main;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
     
                 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -159,10 +167,14 @@
                 font-size: 14px;
                 padding: 0.9rem 2rem 0.9rem 2rem;
                 color: white;
-                background-color: #BEAD8E;
-                border: 2px solid #BEAD8E;
+                background-color: $main;
+                border: 2px solid $main;
                 margin-top: 2rem;
                 margin-left: 0.5rem;
+
+                &:hover {
+                    cursor: pointer;
+                }
 
                 @media (min-width: 1000px) {
                     margin-top: 0;

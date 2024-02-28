@@ -316,6 +316,9 @@
   color: white;
   margin-top: 1.5rem;
 }
+.main__buttons button:hover {
+  cursor: pointer;
+}
 .main__buttons button.color {
   background-color: #BEAD8E;
   border: 2px solid #BEAD8E;
@@ -384,6 +387,9 @@
   border: unset;
   border-bottom: 2px solid #BEAD8E;
 }
+.main__form #check-availability-form .input--container .input:hover {
+  cursor: pointer;
+}
 .main__form #check-availability-form .input--container input[type=date]::-webkit-calendar-picker-indicator {
   display: none;
 }
@@ -398,6 +404,9 @@
   border: 2px solid #BEAD8E;
   margin-top: 2rem;
   margin-left: 0.5rem;
+}
+.main__form #check-availability-form .submit:hover {
+  cursor: pointer;
 }
 @media (min-width: 1000px) {
   .main__form #check-availability-form .submit {
@@ -429,6 +438,7 @@
   bottom: 0px;
   left: 0px;
   opacity: 0.02;
+  z-index: -1;
 }
 @media (min-width: 1000px) {
   .footer {
@@ -681,27 +691,162 @@
   }
 }
 
-.ourFoods {
+.coreFeatures {
   position: relative;
   margin-top: 2rem;
+  padding-bottom: 3rem;
+  overflow: hidden;
+}
+@media (min-width: 1000px) {
+  .coreFeatures {
+    overflow: visible;
+    margin: 2rem 12% 0 12%;
+    padding-bottom: 5rem;
+  }
+}
+@media (min-width: 1350px) {
+  .coreFeatures {
+    margin: 2rem 20% 0 20%;
+    padding-bottom: 3rem;
+  }
+}
+@media (min-width: 1000px) {
+  .coreFeatures .swiper-slide {
+    margin-right: 10rem;
+  }
+}
+@media (min-width: 1000px) {
+  .coreFeatures .swiper-pagination {
+    display: none;
+  }
+}
+.coreFeatures .swiper-pagination-bullet {
+  background-color: #BEAD8E;
+}
+.coreFeatures .float {
+  font-family: Archivo;
+  font-weight: 700;
+  font-size: 120px;
+  color: rgba(34, 34, 34, 0.0392156863);
+  position: absolute;
+  height: 100px;
+  top: -13px;
+  left: 54%;
+}
+@media (min-width: 1000px) {
+  .coreFeatures .float {
+    height: 229px;
+    top: 0px;
+    left: 49%;
+  }
+}
+@media (min-width: 1350px) {
+  .coreFeatures .float {
+    top: 0px;
+    left: 74%;
+  }
+}
+.coreFeatures .swipper-title .coreFeatures--title {
+  font-family: Archivo;
+  font-weight: 700;
+  font-size: 14px;
+  color: #777777;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .coreFeatures .swipper-title .coreFeatures--title {
+    margin-left: 0;
+  }
+}
+.coreFeatures .swipper-title .bigText {
+  font-family: Old Standard TT;
+  font-weight: 400;
+  font-size: 56px;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+  color: #222222;
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .coreFeatures .swipper-title .bigText {
+    font-size: 80px;
+    margin-left: 0;
+  }
+}
+.coreFeatures #coreFeatures-swipper {
+  margin-top: 2rem;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1000px) {
+  .coreFeatures #coreFeatures-swipper {
+    margin-top: 10rem;
+  }
+}
+.coreFeatures #coreFeatures-swipper .swiper-wrapper {
+  padding-bottom: 3rem;
+}
+.coreFeatures #coreFeatures-swipper .coreFeatures-swipper--content {
+  margin: 0 20px;
+}
+@media (min-width: 1000px) {
+  .coreFeatures #coreFeatures-swipper .coreFeatures-swipper--content {
+    margin: 0;
+  }
+}
+.coreFeatures #coreFeatures-swipper .coreFeatures-swipper--content .swiper--item {
+  margin-bottom: 1rem;
+}
+.coreFeatures #coreFeatures-swipper .coreFeatures-swipper--content .swiper--item .img {
+  padding: 5rem 0 2rem 1rem;
+  display: block;
+}
+.coreFeatures #coreFeatures-swipper .coreFeatures-swipper--content .swiper--item .swipper--title, .coreFeatures #coreFeatures-swipper .coreFeatures-swipper--content .swiper--item .swipper--subtitle {
+  display: block;
+  padding-left: 1rem;
+}
+.coreFeatures #coreFeatures-swipper .coreFeatures-swipper--content .swiper--item .swipper--title {
+  font-family: Old Standard TT;
+  font-weight: 400;
+  font-size: 30px;
+  color: #222222;
+  margin-bottom: 0.5rem;
+}
+.coreFeatures #coreFeatures-swipper .coreFeatures-swipper--content .swiper--item .swipper--subtitle {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #222222;
+}
+
+.ourFoods {
+  position: relative;
+  padding-top: 2rem;
   margin-bottom: 3rem;
+  overflow: hidden;
 }
 @media (min-width: 1000px) {
   .ourFoods {
-    margin: 2rem 12% 5rem 12%;
+    overflow: visible;
+    margin: 0 12% 5rem 12%;
   }
 }
 @media (min-width: 1350px) {
   .ourFoods {
-    margin: 2rem 20% 3rem 20%;
+    margin: 0 20% 3rem 20%;
   }
 }
 .ourFoods .cookie {
+  margin-top: 3rem;
   position: absolute;
-  height: 129px;
-  top: -113px;
-  left: 246px;
-  overflow: hidden;
+  height: 100px;
+  top: -48px;
+  left: 79%;
 }
 @media (min-width: 1000px) {
   .ourFoods .cookie {
@@ -712,8 +857,8 @@
 }
 @media (min-width: 1350px) {
   .ourFoods .cookie {
-    top: -200px;
-    left: -290px;
+    top: -140px;
+    left: -280px;
   }
 }
 .ourFoods .swipper-title .menu {
@@ -744,14 +889,12 @@
   }
 }
 .ourFoods #menu-swipper {
-  margin-top: 2rem;
+  margin-top: 4rem;
   height: 100%;
-  margin-bottom: 4rem;
 }
 @media (min-width: 1000px) {
   .ourFoods #menu-swipper {
-    margin-top: 10rem;
-    padding-bottom: 3rem;
+    margin-top: 5rem;
   }
 }
 .ourFoods #menu-swipper .swiper-wrapper {
@@ -785,7 +928,7 @@
 }
 @media (min-width: 1000px) {
   .ourFoods #menu-swipper .swiper-button-prev {
-    top: 70px;
+    top: 30px;
     right: var(--swiper-navigation-sides-offset, 60px);
   }
 }
@@ -796,7 +939,7 @@
 }
 @media (min-width: 1000px) {
   .ourFoods #menu-swipper .swiper-button-next {
-    top: 70px;
+    top: 30px;
     right: var(--swiper-navigation-sides-offset, 0px);
   }
 }
@@ -809,16 +952,31 @@
   }
 }
 .ourFoods #menu-swipper .menu-swipper--content .swiper--item {
+  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
 }
+.ourFoods #menu-swipper .menu-swipper--content .swiper--item__arrow {
+  display: none;
+}
+.ourFoods #menu-swipper .menu-swipper--content .swiper--item:hover > .swiper--item__arrow {
+  display: block;
+}
 .ourFoods #menu-swipper .menu-swipper--content .swiper--item:hover, .ourFoods #menu-swipper .menu-swipper--content .swiper--item:hover div > p {
+  cursor: pointer;
   background-color: #222222;
   color: white;
 }
 .ourFoods #menu-swipper .menu-swipper--content .swiper--item .img {
   margin-right: 1.2rem;
+}
+.ourFoods #menu-swipper .menu-swipper--content .swiper--item .arrow {
+  position: absolute;
+  height: 15px;
+  width: 32px;
+  top: 3.5rem;
+  right: 27px;
 }
 .ourFoods #menu-swipper .menu-swipper--content .swiper--item .swipper--title {
   font-family: Old Standard TT;
@@ -832,11 +990,15 @@
   font-weight: 400;
   font-size: 14px;
   color: #222222;
+  padding-right: 5rem;
 }
 .ourFoods #images-swipper {
   width: 100%;
   margin-top: 2rem;
   padding-bottom: 5rem;
+}
+.ourFoods #images-swipper:hover {
+  cursor: pointer;
 }
 @media (min-width: 1000px) {
   .ourFoods #images-swipper {

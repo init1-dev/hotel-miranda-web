@@ -1,6 +1,24 @@
+const coreFeaturesSwiper = new Swiper('#coreFeatures-swipper', {
+    slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        1000: {
+            slidesPerView: 3,
+            grid: {
+                rows: 2,
+                fill: 'row',
+            },
+            spaceBetween: 100,
+        }
+    }
+});
+
 const foodMenuSwipper = new Swiper('#menu-swipper', {
     slidesPerView: 1,
-        pagination: {
+    pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
@@ -20,7 +38,7 @@ const foodMenuSwipper = new Swiper('#menu-swipper', {
 
 const foodImageSwipper = new Swiper('#images-swipper', {
     slidesPerView: 1,
-        pagination: {
+    pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
@@ -34,8 +52,6 @@ const foodImageSwipper = new Swiper('#images-swipper', {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-
-    // HAMBURGUER
     const menuToggle = document.getElementById("header__menu-toggle");
     const menu = document.querySelector(".header__nav--list");
 

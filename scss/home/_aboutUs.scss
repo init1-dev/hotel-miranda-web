@@ -1,0 +1,170 @@
+.aboutUs {
+    display: block;
+    padding-bottom: 3rem;
+    overflow: hidden;
+    
+    @media (min-width: 1000px) {
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: visible;
+        margin: 2rem 12% 0 12%;
+        padding-bottom: 5rem;
+    }
+
+    @media (min-width: 1350px) {
+        margin: 2rem 20% 0 20%;
+        padding-bottom: 3rem;
+    }
+
+    &__section1 {
+        padding: 0 1rem;
+        padding-top: 1rem;
+        padding-bottom: 10rem;
+        background-color: #F9F9F9;
+
+        @media (min-width: 1000px) {
+            
+        }
+
+        &--title {
+
+            p {
+                font-family: Archivo;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 18px;
+                letter-spacing: 2.8px;
+                color: #777777;
+
+                @media (min-width: 1000px) {
+                    font-size: 14px;
+                    line-height: 15.23px;
+                }
+            }
+        }
+
+        &--content {
+
+            h2 {
+                font-family: Old Standard TT;
+                font-weight: 400;
+                font-size: 60px;
+                line-height: 60px;
+                color: #111111;
+                letter-spacing: -2.4px;
+                margin: 1.5rem 0 1.5rem 0;
+
+                @media (min-width: 1000px) {
+                    font-size: 80px;
+                    line-height: 90px;
+                }
+            }
+
+            p {
+                font-family: Archivo;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                color: #777777;
+            }
+        }
+    }
+
+    &__section2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 2.5rem;
+        gap: 1rem;
+        translate: 0rem -7rem;
+
+        @media (min-width: 1000px) {
+            gap: 0;
+        }
+
+        &__box {
+            display: flex;
+            grid-template-columns: 1fr;
+            flex-direction: column;
+
+            @media (min-width: 1000px) {
+                flex-direction: row;
+            }
+
+            &__element {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                aspect-ratio: 1/1;
+                overflow: hidden;
+                width: 100%;
+                
+                h2 {
+                    font-family: Old Standard TT;
+                    font-weight: 400;
+                    font-size: 30px;
+                    margin: 1rem 0 1rem 0;
+                }
+
+                p {
+                    text-align: center;
+                    font-family: Roboto;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+
+                @media (min-width: 1000px) {
+                    aspect-ratio: 1/1;
+                    width: 50%;
+                }
+
+                &.element2, &.element4 {
+                    padding: 3rem;
+                }
+
+                &.element1 {
+                    order: 1;
+
+                    @media (min-width: 1000px) {
+                        order: 2;
+                    }
+                }
+            
+                &.element2 { 
+                    order: 2;
+
+                    @media (min-width: 1000px) {
+                        order: 1;
+                    }
+                }
+                
+                &.element3 {
+                    order: 3;
+                }
+                
+                &.element4 {
+                    color: white;
+                    order: 4;
+                    background-color: #222222;
+                }
+
+                .img {
+                    height: auto;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                .bg {
+                    height: 6rem;
+                    position: absolute;
+                    translate: 4.4rem -2.5rem;
+                    z-index: -1;
+                }
+
+                
+            }
+    
+            
+        }
+    }
+}

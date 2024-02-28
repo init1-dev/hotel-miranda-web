@@ -11,7 +11,7 @@
     <script type="module" src="./js/main.js" defer></script>
 </head>
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <p class="header__slogan">We Make Your Feel Comfortable</p>
         <nav class="header__nav">
             <input id="header__menu-toggle" type="checkbox" />
@@ -50,7 +50,7 @@
         </nav>
     </header>
 
-    <main class="main">
+    <main id="main" class="main">
         <div class="main__container">
             <div class="main__upper">
                 <p class="main__upper--text">THE ULTIMATE LUXURY</p>
@@ -83,19 +83,56 @@
         </div>
     </main>
 
-    <section>
-        Discover Our Underground.
+    <section id="aboutUs" class="aboutUs">
+        <div class="aboutUs__section1">
+            <div class="aboutUs__section1--title">
+                <p>ABOUT US</p>
+            </div>
+
+            <div class="aboutUs__section1--content">
+                <h2>Discover Our</h2>
+                <h2>Underground.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="main__buttons">
+                    <button class="color">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutUs__section2">
+            <div class="aboutUs__section2__box box1">
+                <div class="aboutUs__section2__box__element element1">
+                    <img class="img" src="./assets/employees.png" alt="">
+                </div>
+                <div class="aboutUs__section2__box__element element2">
+                    <img src="./assets/team.png" alt="">
+                    <img class="bg" src="./assets/teambg.png" alt="">
+                    <h2>Strong Team</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                </div>
+            </div>
+            <div class="aboutUs__section2__box box2">
+                <div class="aboutUs__section2__box__element element3">
+                    <img class="img" src="./assets/luxuryroom.png" alt="">
+                </div>
+                <div class="aboutUs__section2__box__element element4">
+                    <img src="./assets/luxury.png" alt="">
+                    <h2>Luxury Room</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section>
+    <section id="rooms" class="rooms">
         Hand Picked Rooms
     </section>
 
-    <section>
+    <section id="luxuryPlace" class="luxuryPlace">
         Meet With Our Luxury Place.
     </section>
     
-    <section class="coreFeatures">
+    <section id="coreFeatures" class="coreFeatures">
         <div id="coreFeatures-swipper" class="swiper">
             <div class="swipper-title">
                 <p class="coreFeatures--title">FACILITIES</p>
@@ -185,7 +222,7 @@
         </div>
     </section>
 
-    <section class="ourFoods">
+    <section id="ourFoods" class="ourFoods">
         <img class="cookie" src="./assets/cookie.png" alt="">
 
         <div id="menu-swipper" class="swiper">
@@ -338,7 +375,7 @@
 
     </section>
 
-    <section class="features">
+    <section id="features" class="features">
         <div class="features__container">
             <div class="feature">
                 <img class="feature__image" src="./assets/rocket.png" alt="feature rocket">
@@ -366,7 +403,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <section class="footer__section section--logo">
             <div class="footer__logo--container">
                 <img class="img" src="./assets/hfoot.png" alt="logo">

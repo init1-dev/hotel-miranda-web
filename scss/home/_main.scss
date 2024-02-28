@@ -1,10 +1,6 @@
-@media (min-width: 1000px) {
-        
-}
-
 .main {
 
-    padding: 4rem 0rem 5rem 0rem;
+    padding: 4rem 0rem 3rem 0rem;
 
     @media (min-width: 1000px) {
         margin-top: 4rem;
@@ -56,43 +52,6 @@
                 font-size: 85px;
             }
         }
-    }
-
-    &__buttons {
-
-        @media (min-width: 1000px) {
-            display: flex;
-        }
-
-        button {
-            display: block;
-            font-family: Archivo;
-            font-weight: 600;
-            font-size: 14px;
-            padding: 0.9rem 2.5rem 0.9rem 2.5rem;
-            color: white;
-            margin-top: 1.5rem;
-
-            &:hover {
-                cursor: pointer;
-            }
-
-            &.color {
-                background-color: $main;
-                
-                border: 2px solid $main;
-
-                @media (min-width: 1000px) {
-                    margin-right: 1rem;
-                }
-            }
-    
-            &.dark {
-                background-color: $mainLightBlack;
-                border: 2px solid #676767;
-            }
-        }
-
     }
 
     &__form {

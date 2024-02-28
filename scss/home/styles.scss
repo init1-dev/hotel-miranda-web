@@ -4,12 +4,15 @@ $mainLightBlack: #333333;
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@import '_header';
-@import '_main';
-@import '_footer';
-@import '_coreFeatures';
-@import '_ourFoods';
-@import '_features';
+@import 'header';
+@import 'main';
+@import 'aboutUs';
+@import 'rooms';
+@import 'luxuryPlace';
+@import 'footer';
+@import 'coreFeatures';
+@import 'ourFoods';
+@import 'features';
 
 html, * {
     box-sizing: border-box;
@@ -19,4 +22,94 @@ html, * {
 
 body {
     min-width: 320px;
+
+    .main__buttons {
+
+        @media (min-width: 1000px) {
+            display: flex;
+        }
+
+        button {
+            display: block;
+            font-family: Archivo;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 0.9rem 2.5rem 0.9rem 2.5rem;
+            color: white;
+            margin-top: 1.5rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &.color {
+                background-color: $main;
+                
+                border: 2px solid $main;
+
+                @media (min-width: 1000px) {
+                    margin-right: 1rem;
+                }
+            }
+    
+            &.dark {
+                background-color: $mainLightBlack;
+                border: 2px solid #676767;
+            }
+        }
+
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        margin-top: 2rem;
+        color: black;
+        background-color: #F8F8F8;
+        border: 1px solid grey;
+        width: 36px;
+        height: 36px;
+    
+        &:hover {
+            color: white;
+            background-color: $main;
+        }
+    
+        &::after {
+            font-size: 10px;
+        }
+    }
+    
+    .swiper-button-prev {
+        left: auto;
+        top: unset;
+        bottom: 0px;
+        right: var(--swiper-navigation-sides-offset, 60px);
+        
+        @media (min-width: 1000px) {
+            top: 30px;
+            right: var(--swiper-navigation-sides-offset, 60px);
+        }
+    }
+    
+    .swiper-button-next {
+        top: unset;
+        right: 20px;
+        bottom: 0px;
+    
+        @media (min-width: 1000px) {
+            top: 30px;
+            right: var(--swiper-navigation-sides-offset, 0px);
+        }
+    }
+
+    .swiper-pagination {
+            
+
+        @media (min-width: 1000px) {
+            display: none;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        background-color: $main;
+    }
 }

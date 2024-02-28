@@ -600,11 +600,6 @@
   margin-bottom: 3rem;
   overflow: hidden;
 }
-@media (min-width: 1000px) {
-  #rooms {
-    overflow: visible;
-  }
-}
 #rooms .title p {
   font-family: Archivo;
   font-weight: 700;
@@ -632,21 +627,27 @@
   width: 100%;
   margin-top: 0.5rem;
   padding: 0 1rem 5rem 1rem;
+  overflow: hidden;
 }
 @media (min-width: 1000px) {
   #rooms #rooms-swiper {
-    width: 98vw;
+    padding: 0 0rem 5rem 0rem;
+    width: 100vw;
     margin-top: 0;
     padding-bottom: 0;
   }
 }
+#rooms #rooms-swiper .swipe-wrapper {
+  height: 65vh;
+}
 #rooms #rooms-swiper .swiper-slide {
   font-size: 18px;
   background: #fff;
+  overflow: hidden;
 }
 #rooms #rooms-swiper .swiper-slide img {
   width: 100%;
-  height: auto;
+  height: 50vh;
   max-width: 100%;
   max-height: 100%;
 }
@@ -658,30 +659,38 @@
   }
 }
 #rooms #rooms-swiper .swiper-button-prev {
-  left: 7%;
-  top: unset;
-  bottom: 65%;
-  right: var(--swiper-navigation-sides-offset, 60px);
+  left: 30px;
+  top: 50%;
 }
 @media (min-width: 1000px) {
   #rooms #rooms-swiper .swiper-button-prev {
-    top: 130px;
-    right: unset;
-    left: var(--swiper-navigation-sides-offset, 60px);
+    top: 43%;
+    left: var(--swiper-navigation-sides-offset, 27%);
+  }
+}
+@media (min-width: 1350px) {
+  #rooms #rooms-swiper .swiper-button-prev {
+    top: 43%;
+    left: var(--swiper-navigation-sides-offset, 28%);
   }
 }
 #rooms #rooms-swiper .swiper-button-prev.swiper-button-disabled {
   opacity: 0.7;
 }
 #rooms #rooms-swiper .swiper-button-next {
-  top: unset;
-  right: 7%;
-  bottom: 65%;
+  right: 30px;
+  top: 50%;
 }
 @media (min-width: 1000px) {
   #rooms #rooms-swiper .swiper-button-next {
-    top: 130px;
-    right: var(--swiper-navigation-sides-offset, 225px);
+    top: 43%;
+    right: var(--swiper-navigation-sides-offset, 26%);
+  }
+}
+@media (min-width: 1350px) {
+  #rooms #rooms-swiper .swiper-button-next {
+    top: 43%;
+    right: var(--swiper-navigation-sides-offset, 27%);
   }
 }
 #rooms #rooms-swiper .slide-title, #rooms #rooms-swiper .slide-info {

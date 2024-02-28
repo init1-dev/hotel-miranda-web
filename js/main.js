@@ -9,7 +9,7 @@ const roomSwiper = new Swiper("#rooms-swiper", {
     },
     breakpoints: {
         1000: {
-            spaceBetween: 20,
+            spaceBetween: 30,
             addSlidesBefore: 1,
             slidesPerView: 3,
             centeredSlides: true,

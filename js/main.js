@@ -1,3 +1,19 @@
+const roomSwiper = new Swiper("#rooms-swiper", {
+    grabCursor: true,
+    spaceBetween: 40,
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        1000: {
+            slidesPerView: 3,
+            centeredSlides: true,
+        }
+    }
+});
+
 const coreFeaturesSwiper = new Swiper('#coreFeatures-swipper', {
     slidesPerView: 1,
     pagination: {

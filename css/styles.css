@@ -607,6 +607,7 @@
   line-height: 15px;
   text-align: center;
   color: #777777;
+  letter-spacing: 2.8px;
 }
 #rooms .title h2 {
   font-family: Old Standard TT;
@@ -621,6 +622,8 @@
 @media (min-width: 1000px) {
   #rooms .title h2 {
     margin-left: 1%;
+    font-size: 80px;
+    margin-bottom: 2rem;
   }
 }
 #rooms #rooms-swiper {
@@ -666,13 +669,13 @@
 }
 @media (min-width: 1000px) {
   #rooms #rooms-swiper .swiper-button-prev {
-    top: 39%;
+    top: 43%;
     left: var(--swiper-navigation-sides-offset, 27%);
   }
 }
 @media (min-width: 1350px) {
   #rooms #rooms-swiper .swiper-button-prev {
-    top: 42%;
+    top: 45%;
     left: var(--swiper-navigation-sides-offset, 28%);
   }
 }
@@ -687,13 +690,13 @@
 }
 @media (min-width: 1000px) {
   #rooms #rooms-swiper .swiper-button-next {
-    top: 39%;
+    top: 43%;
     right: var(--swiper-navigation-sides-offset, 26%);
   }
 }
 @media (min-width: 1350px) {
   #rooms #rooms-swiper .swiper-button-next {
-    top: 42%;
+    top: 45%;
     right: var(--swiper-navigation-sides-offset, 27%);
   }
 }
@@ -756,8 +759,105 @@
   opacity: 1;
   text-align: center;
 }
-#luxuryPlace {
-  background-color: blue;
+
+.luxuryPlace {
+  overflow: hidden;
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem 2rem 1rem;
+}
+@media (min-width: 1000px) {
+  .luxuryPlace {
+    gap: 4rem;
+    padding: 2rem 8% 5rem 8%;
+    flex-direction: row;
+    background-color: unset;
+    background: linear-gradient(to right, #222222 67%, #AD9D82 33%);
+  }
+}
+@media (min-width: 1350px) {
+  .luxuryPlace {
+    padding: 2rem 15% 5rem 15%;
+  }
+}
+.luxuryPlace__text {
+  display: block;
+  padding: 4rem 1rem 0rem 1rem;
+}
+@media (min-width: 1000px) {
+  .luxuryPlace__text {
+    width: 50%;
+  }
+}
+.luxuryPlace__text p {
+  color: #BEAD8E;
+  margin-bottom: 2rem;
+}
+.luxuryPlace__text h2 {
+  font-family: Old Standard TT;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: white;
+}
+@media (min-width: 1000px) {
+  .luxuryPlace__text h2 {
+    font-size: 80px;
+    line-height: 85px;
+    letter-spacing: -2.4px;
+  }
+}
+.luxuryPlace__text .desc {
+  margin-bottom: 0;
+}
+.luxuryPlace__video {
+  display: block;
+}
+@media (min-width: 1000px) {
+  .luxuryPlace__video {
+    width: 50%;
+  }
+}
+.luxuryPlace .luxuryPlace__video {
+  display: flex;
+  width: 100%;
+  height: 260px;
+  border: 5px solid #BEAD8E;
+  object-fit: cover;
+}
+@media (min-width: 1000px) {
+  .luxuryPlace .luxuryPlace__video {
+    padding: 0;
+    aspect-ratio: 1/1;
+    width: auto;
+    height: 350px;
+    margin: 0;
+  }
+}
+.luxuryPlace button {
+  display: block;
+  font-family: Archivo;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0.9rem 2.5rem 0.9rem 2.5rem;
+  color: white;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.luxuryPlace button:hover {
+  cursor: pointer;
+}
+.luxuryPlace button.color {
+  background-color: #BEAD8E;
+  border: 2px solid #BEAD8E;
+}
+@media (min-width: 1000px) {
+  .luxuryPlace button.color {
+    margin-right: 1rem;
+  }
 }
 
 .footer {
@@ -1092,6 +1192,7 @@
   margin-left: 1rem;
   margin-bottom: 1.5rem;
   text-align: center;
+  letter-spacing: 2.8px;
 }
 @media (min-width: 1000px) {
   .coreFeatures .swipper-title .coreFeatures--title {
@@ -1206,6 +1307,7 @@
   color: #777777;
   margin-left: 1rem;
   margin-bottom: 2rem;
+  letter-spacing: 2.8px;
 }
 @media (min-width: 1000px) {
   .ourFoods .swipper-title .menu {
@@ -1412,6 +1514,20 @@ html, * {
 
 body {
   min-width: 320px;
+}
+body .p {
+  font-family: Archivo;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+}
+body .desc {
+  font-family: Archivo;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
 }
 @media (min-width: 1000px) {
   body .main__buttons {

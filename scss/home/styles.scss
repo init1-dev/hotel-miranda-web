@@ -23,6 +23,22 @@ html, * {
 body {
     min-width: 320px;
 
+    .p {
+        font-family: Archivo;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 2.8px;
+    }
+
+    .desc {
+        font-family: Archivo;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #777777;
+    }
+
     .main__buttons {
 
         @media (min-width: 1000px) {

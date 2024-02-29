@@ -17,7 +17,18 @@ const roomSwiper = new Swiper("#rooms-swiper", {
     }
 });
 
-console.log(roomSwiper);
+const video = document.querySelector('.luxuryPlace__video');
+console.log(video);
+// video.pause();
+
+video.addEventListener('click', function() {
+    console.log(video);
+    if(video.paused) {
+        video.play();
+    } else {
+        video.pause();
+    }
+});
 
 const coreFeaturesSwiper = new Swiper('#coreFeatures-swipper', {
     slidesPerView: 1,

@@ -454,6 +454,7 @@
   height: 18.8em;
   aspect-ratio: 1/1;
   object-fit: cover;
+  object-position: top;
 }
 .about-us__features .luxury {
   translate: 0 4px;

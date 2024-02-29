@@ -22,7 +22,11 @@ $bg-beige: #bead8e;
 // COMPONENTS
 @import './components/full-width-rooms-swiper.scss';
 @import './components/rooms-room-card.scss';
-
+@import './components/core-features-template.scss';
+@import './components/banner-breadcrumb.scss';
+@import './components/header.scss';
+@import './components/footer.scss';
+@import './components/main.scss';
 
 html, * {
     box-sizing: border-box;

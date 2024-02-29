@@ -1,14 +1,20 @@
-<header class="banner">
-    <div class="banner__inner banner__inner--about --max-width">
-        <p class="banner__text upper__case">The Ultimate Luxury </p>
-        <p class="banner__title">About Us</p>
+<div class="main">
+    <div class="main__container">
+        <div class="main__upper">
+            <p class="main__upper--text">THE ULTIMATE LUXURY</p>
+        </div>
+
+        <div class="main__middle">
+            <p class="main__middle--text">About Us</p>       
+        </div>
     </div>
-    <div class="banner__pagination">
-        <div class="banner__pagination-inner">
+    <div class="banner__breadcrumb">
+        <div class="banner__breadcrumb-inner">
             <span>Home</span><span>|</span><span>About</span>
         </div>
     </div>
-</header>
+</div>
+
 <section class="about__video">
     <video class="about__video-video" src=""></video>
     <div class="about__video-text">
@@ -55,92 +61,97 @@
         <button class="about__restaurant-button upper__case">Take a Tour</button>
     </div>
 </section>
-<section class="about__facilities facilities facilities--dark">
-    <div class="facilities__inner">
-        <p class="facilities__informative-text upper__case">Facilities</p>
-        <p class="facilities__title">Core Features</p>
-        <div class="facilities__swiper facilities__swiper--dark swiper">
-            <!-- Additional required wrapper -->
-            <div class="facilities__swiper-wrapper swiper-wrapper">
-                <!-- Slides -->
-                <div class="facilities__swiper-slide swiper-slide">
-                    <p class="facilities__swiper-slide-number facilities__swiper-slide-number--dark">
-                        01
-                    </p>
-                    <img class="facilities__swiper-slide-img" src="assets/img/high-rating.svg" alt="">
-                    <p class="facilities__swiper-slide-title">Have High Rating</p>
-                    <p class="facilities__swiper-slide-text">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna..
-                    </p>
-                </div>
-                <div class="facilities__swiper-slide swiper-slide">
-                    <p class="facilities__swiper-slide-number facilities__swiper-slide-number--dark">
-                        02
-                    </p>
-                    <img class="facilities__swiper-slide-img" src="assets/img/quiet-hours.svg" alt="">
-                    <p class="facilities__swiper-slide-title">Quiet Hours</p>
-                    <p class="facilities__swiper-slide-text">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna..
-                    </p>
-                </div>
-                <div class="facilities__swiper-slide swiper-slide">
-                    <p class="facilities__swiper-slide-number facilities__swiper-slide-number--dark">
-                        03
-                    </p>
-                    <img class="facilities__swiper-slide-img" src="assets/img/location.svg" alt="">
-                    <p class="facilities__swiper-slide-title">Best Locations</p>
-                    <p class="facilities__swiper-slide-text">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna..
-                    </p>
-                </div>
-                <div class="facilities__swiper-slide swiper-slide">
-                    <p class="facilities__swiper-slide-number facilities__swiper-slide-number--dark">
-                        04
-                    </p>
-                    <img class="facilities__swiper-slide-img" src="assets/img/free-cancelation.svg" alt="">
-                    <p class="facilities__swiper-slide-title">Free Cancellation</p>
-                    <p class="facilities__swiper-slide-text">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna..
-                    </p>
-                </div>
-                <div class="facilities__swiper-slide swiper-slide">
-                    <p class="facilities__swiper-slide-number facilities__swiper-slide-number--dark">
-                        05
-                    </p>
-                    <img class="facilities__swiper-slide-img" src="assets/img/payment.svg" alt="">
-                    <p class="facilities__swiper-slide-title">Payment Options</p>
-                    <p class="facilities__swiper-slide-text">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna..
-                    </p>
-                </div>
-                <div class="facilities__swiper-slide swiper-slide">
-                    <p class="facilities__swiper-slide-number facilities__swiper-slide-number--dark">
-                        06
-                    </p>
-                    <img class="facilities__swiper-slide-img" src="assets/img/special-offers.svg" alt="">
-                    <p class="facilities__swiper-slide-title">Special Offers</p>
-                    <p class="facilities__swiper-slide-text">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna..
-                    </p>
+
+<section>
+    <div id="coreFeatures-swipper" class="swiper">
+        <div class="swipper-title">
+            <p class="coreFeatures--title">FACILITIES</p>
+            <p class="bigText">Core Features</p>
+        </div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="coreFeatures-swipper--content">
+                    <div class="swiper--item">
+                        <img class="img" src="./assets/features/feature1.png" alt="">
+                        <p class="float">01</p>
+                        <div>
+                            <p class="swipper--title">Have High Rating</p>
+                            <p class="swipper--subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="facilities__swiper-pagination swiper-pagination"></div>
+
+            <div class="swiper-slide">
+                <div class="coreFeatures-swipper--content">
+                    <div class="swiper--item">
+                        <img class="img" src="./assets/features/feature2.png" alt="">
+                        <p class="float">02</p>
+                        <div>
+                            <p class="swipper--title">Quiet Hours</p>
+                            <p class="swipper--subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="coreFeatures-swipper--content">
+                    <div class="swiper--item">
+                        <img class="img" src="./assets/features/feature3.png" alt="">
+                        <p class="float">03</p>
+                        <div>
+                            <p class="swipper--title">Best Locations</p>
+                            <p class="swipper--subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="coreFeatures-swipper--content">
+                    <div class="swiper--item">
+                        <img class="img" src="./assets/features/feature4.png" alt="">
+                        <p class="float">04</p>
+                        <div>
+                            <p class="swipper--title">Free Cancellation</p>
+                            <p class="swipper--subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="coreFeatures-swipper--content">
+                    <div class="swiper--item">
+                        <img class="img" src="./assets/features/feature5.png" alt="">
+                        <p class="float">05</p>
+                        <div>
+                            <p class="swipper--title">Payment Options</p>
+                            <p class="swipper--subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="coreFeatures-swipper--content">
+                    <div class="swiper--item">
+                        <img class="img" src="./assets/features/feature6.png" alt="">
+                        <p class="float">06</p>
+                        <div>
+                            <p class="swipper--title">Special Offers</p>
+                            <p class="swipper--subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ... -->
         </div>
+        <div class="swiper-pagination"></div>
     </div>
 </section>
+
 </section>
 <section class="about__counter">
     <p class="about__counter-informative-text upper__case">Counter</p>

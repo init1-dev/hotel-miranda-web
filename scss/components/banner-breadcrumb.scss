@@ -1,0 +1,38 @@
+.banner__breadcrumb {
+    translate: 0% -50%;
+    max-width: 12.5rem;
+    width: 9.75em;
+    background-color: $color-white;
+    margin-right: 10%;
+    margin-left: auto;
+    padding: 1em 1em;
+
+    @media (min-width: 1000px) {
+        width: 100%;
+    }
+
+    &-inner {
+        text-align: center;
+    }
+
+    &--room-details {
+        width: 100%;
+    }
+
+    span {
+        font-family: $font-archivo;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1rem;
+        letter-spacing: -0.1rem;
+        color: $color-black;
+
+        &:nth-child(3) {
+            color: $bg-beige;
+        }
+
+        &:not(:last-child) {
+            margin-right: 0.5em;
+        }
+    }
+}

@@ -1606,6 +1606,12 @@ body .swiper-pagination-bullet {
 .--max-width {
   max-width: 74rem;
 }
+@media (min-width: 1000px) {
+  .--max-width {
+    padding-bottom: 5rem;
+  }
+}
+
 .about-separator {
   overflow: hidden;
 }

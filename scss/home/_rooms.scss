@@ -20,7 +20,7 @@
         }
         
         h2 {
-            font-family: Old Standard TT;
+            font-family: $font-standard;
             font-weight: 400;
             font-size: 56px;
             line-height: 60px;
@@ -156,7 +156,7 @@
             .description {
 
                 h2 {
-                    font-family: Old Standard TT;
+                    font-family: $font-standard;
                     font-weight: 400;
                     font-size: 28px;
                     line-height: 36px;

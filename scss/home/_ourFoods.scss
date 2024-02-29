@@ -49,7 +49,7 @@
         }
 
         .bigText {
-            font-family: Old Standard TT;
+            font-family: $font-standard;
             font-weight: 400;
             font-size: 56px;
             margin-left: 1rem;
@@ -121,7 +121,7 @@
                 }
 
                 .swipper--title {
-                    font-family: Old Standard TT;
+                    font-family: $font-standard;
                     font-weight: 400;
                     font-size: 24px;
                     color: $mainBlack;

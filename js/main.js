@@ -15,18 +15,54 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    const video = document.querySelector('.luxuryPlace__video') || '';
+    let hovered = false;
 
-    if(video !== ''){
-        video.addEventListener('click', function() {
-            if(location.href.split('5500/')[1] === 'index.html'){
-                if(video.paused) {
-                    video.play();
-                } else {
-                    video.pause();
-                }
+    if($(window).width() > 1000) {
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 100 && hovered === false){
+                $( ".header__nav" ).fadeOut();
+            } else if (hovered === true) { 
+                $('.header__nav').fadeIn();
+            } else {
+                $('.header__nav').fadeIn();
             }
         });
+    
+        $(".header").mouseenter(function (e){
+            if ($('.header__nav').is(':visible') && hovered === false) {
+                e.preventDefault();
+                hovered = true;
+            } else {
+                $(".header__nav").fadeIn();
+                hovered = true;
+            }
+        });
+        
+        $(".header").mouseleave(function (e){
+            if ($(window).scrollTop() > 100) {
+                $(".header__nav").fadeOut();
+                hovered = false;
+            } else {
+                e.preventDefault();
+                hovered = false;
+            }
+        });
+    }
+
+    let video;
+
+    const playVideo = () => {
+        if(video !== ''){
+            video.addEventListener('click', function() {
+                if(video !== ''){
+                    if(video.paused) {
+                        video.play();
+                    } else {
+                        video.pause();
+                    }
+                }
+            });
+        }
     }
 
     function loadPage(url) {
@@ -42,10 +78,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 pageContent.innerHTML = html;
 
                 document.getElementById('page-content').innerHTML = html;
+                video = document.querySelector('.luxuryPlace__video') || '';
+                playVideo();
                 initializeSwiper();
             });
     }
-    
+
     function initializeSwiper() {
         const roomSwiper = new Swiper("#rooms-swiper", {
             grabCursor: true,

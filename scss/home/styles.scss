@@ -131,3 +131,25 @@ body {
         background-color: $main;
     }
 }
+
+.--max-width {
+    max-width: 74rem;
+
+    @media (min-width: 1000px) {
+        padding-bottom: 5rem;
+    }
+}
+
+.about-separator {
+    overflow: hidden;
+
+    @media (min-width: 1000px) {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    @media (min-width: 1350px) {
+        padding-left: 5%;
+        padding-right: 0;
+    }
+}

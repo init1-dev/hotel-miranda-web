@@ -1,0 +1,43 @@
+.number-pagination {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+    @media (min-width: 1000px) {
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    color: black;
+
+    &__items {
+        text-align: center;
+        position: relative;
+        list-style: none;
+        margin: 0 auto;
+
+        &--arrow, &--number {
+            padding: 0.5rem 1rem;
+            display: inline-block;
+            color: $mainBlack;
+            cursor: pointer;
+
+            @media (min-width: 1000px) {
+                padding: 1rem 1.5rem;
+            }
+
+            &:hover {
+                background-color: $main;
+                color: white;
+            }
+        }
+
+        &--number {
+            font-family: Roboto;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+        }
+
+    }
+
+}

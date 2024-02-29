@@ -1250,6 +1250,7 @@
   line-height: 1rem;
   letter-spacing: -0.1rem;
   color: #111;
+  cursor: pointer;
 }
 .banner__breadcrumb span:nth-child(3) {
   color: #BEAD8E;
@@ -1925,6 +1926,45 @@
   .main__form #check-availability-form .submit {
     margin-left: 5rem;
   }
+}
+
+.number-pagination {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  color: black;
+}
+@media (min-width: 1000px) {
+  .number-pagination {
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+  }
+}
+.number-pagination__items {
+  text-align: center;
+  position: relative;
+  list-style: none;
+  margin: 0 auto;
+}
+.number-pagination__items--arrow, .number-pagination__items--number {
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  color: #222222;
+  cursor: pointer;
+}
+@media (min-width: 1000px) {
+  .number-pagination__items--arrow, .number-pagination__items--number {
+    padding: 1rem 1.5rem;
+  }
+}
+.number-pagination__items--arrow:hover, .number-pagination__items--number:hover {
+  background-color: #BEAD8E;
+  color: white;
+}
+.number-pagination__items--number {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 html, * {

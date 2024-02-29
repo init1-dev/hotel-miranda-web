@@ -27,7 +27,7 @@
             letter-spacing: -1.2px;
             text-align: center;
             margin-top: 2rem;
-            color: #222222;
+            color: $mainBlack;
 
             @media (min-width: 1000px) {
                 margin-left: 1%;
@@ -135,7 +135,7 @@
 
                 i {
                     font-size: 12px;
-                    color: #222222;
+                    color: $mainBlack;
                     
                     &:not(:last-child) {
                         letter-spacing: 12px;
@@ -161,7 +161,7 @@
                     font-size: 28px;
                     line-height: 36px;
                     letter-spacing: -1.2px;
-                    color: #222222;
+                    color: $mainBlack;
                 }
 
                 p {

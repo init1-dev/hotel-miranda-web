@@ -40,7 +40,7 @@
   font-size: 0.85rem;
   line-height: 1rem;
   letter-spacing: 0.18rem;
-  background-color: #bead8e;
+  background-color: #BEAD8E;
   border: 0em;
 }
 .about-us__features {
@@ -766,7 +766,7 @@
   text-transform: uppercase;
 }
 .about__cards .about__card--beige {
-  background-color: #bead8e;
+  background-color: #BEAD8E;
   color: #fff;
 }
 
@@ -820,7 +820,7 @@
   font-weight: 700;
   line-height: 1rem;
   letter-spacing: 0.15rem;
-  background-color: #bead8e;
+  background-color: #BEAD8E;
 }
 
 .about__counter {
@@ -1252,7 +1252,7 @@
   color: #111;
 }
 .banner__breadcrumb span:nth-child(3) {
-  color: #bead8e;
+  color: #BEAD8E;
 }
 .banner__breadcrumb span:not(:last-child) {
   margin-right: 0.5em;

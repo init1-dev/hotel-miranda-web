@@ -394,7 +394,6 @@
 
 .aboutUs {
   display: block;
-  padding-bottom: 3rem;
   overflow: hidden;
 }
 @media (min-width: 1000px) {
@@ -402,6 +401,7 @@
     display: flex;
     flex-direction: row-reverse;
     margin: 6rem 0 0 0;
+    padding-bottom: 3rem;
   }
 }
 .aboutUs__section1 {
@@ -596,9 +596,13 @@
 
 #rooms {
   position: relative;
-  padding-top: 2rem;
   margin-bottom: 3rem;
   overflow: hidden;
+}
+@media (min-width: 1000px) {
+  #rooms {
+    padding-top: 2rem;
+  }
 }
 #rooms .title p {
   font-family: Archivo;
@@ -629,7 +633,7 @@
 #rooms #rooms-swiper {
   width: 100%;
   margin-top: 0.5rem;
-  padding: 0 1rem 5rem 1rem;
+  padding: 0 1rem 0rem 1rem;
   overflow: hidden;
 }
 @media (min-width: 1000px) {
@@ -1223,7 +1227,7 @@
 }
 @media (min-width: 1000px) {
   .coreFeatures #coreFeatures-swipper {
-    margin-top: 10rem;
+    margin-top: 6rem;
   }
 }
 .coreFeatures #coreFeatures-swipper .swiper-wrapper {

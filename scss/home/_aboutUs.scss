@@ -1,5 +1,5 @@
 .about-us {
-    margin-top: 5rem;
+    margin-top: 2rem;
     padding: 2em 1.25em;
 
     &__informative-text {
@@ -119,11 +119,12 @@
 @media (min-width: 1000px) {
     .about-us {
         position: relative;
-        margin-bottom: 12em;
+        margin-bottom: 5em;
         max-width: 96.5rem;
         margin-right: 0;
         margin-left: auto;
         padding: 0em 0em;
+        margin-top: 5rem;
 
         &__inner {
             padding: 0em 0em;

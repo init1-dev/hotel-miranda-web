@@ -256,7 +256,7 @@
 }
 
 .main {
-  padding: 4rem 0rem 3rem 0rem;
+  padding: 4rem 0rem 0rem 0rem;
 }
 @media (min-width: 1000px) {
   .main {
@@ -400,7 +400,7 @@
 }
 
 .about-us {
-  margin-top: 5rem;
+  margin-top: 2rem;
   padding: 2em 1.25em;
 }
 .about-us__informative-text {
@@ -505,11 +505,12 @@
 @media (min-width: 1000px) {
   .about-us {
     position: relative;
-    margin-bottom: 12em;
+    margin-bottom: 5em;
     max-width: 96.5rem;
     margin-right: 0;
     margin-left: auto;
     padding: 0em 0em;
+    margin-top: 5rem;
   }
   .about-us__inner {
     padding: 0em 0em;
@@ -1604,12 +1605,6 @@ body .swiper-pagination-bullet {
 .--max-width {
   max-width: 74rem;
 }
-@media (min-width: 1000px) {
-  .--max-width {
-    padding-bottom: 5rem;
-  }
-}
-
 .about-separator {
   overflow: hidden;
 }
@@ -1621,7 +1616,7 @@ body .swiper-pagination-bullet {
 }
 @media (min-width: 1350px) {
   .about-separator {
-    padding-left: 5%;
+    padding-left: 2%;
     padding-right: 0;
   }
 }

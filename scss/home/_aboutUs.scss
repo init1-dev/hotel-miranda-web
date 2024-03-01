@@ -119,13 +119,20 @@
 
 @media (min-width: 1000px) {
     .about-us {
+        width: 90%;
+        margin-left: 5%;
         position: relative;
         margin-bottom: 5em;
-        max-width: 96.5rem;
+        // max-width: 96.5rem;
         margin-right: 0;
-        margin-left: 20%;
-        padding: 0em 0em;
+        padding: 0 10% 0 0;
         margin-top: 5rem;
+        overflow: hidden;
+
+        @media (min-width: 1350px) {
+            width: 85%;
+            margin-left: auto;
+        }
 
         &__inner {
             padding: 0em 0em;
@@ -148,7 +155,7 @@
         &__background {
             width: 70%;
             max-width: 65rem;
-            right: 0;
+            right: -10%;
             left: auto;
             position: absolute;
             top: 8.5em;

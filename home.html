@@ -20,11 +20,11 @@
         <form id="check-availability-form" action="">
             <div class="input--container">
                 <p class="input--text">Arrival Date</p>
-                <input class="input" type="date" name="arrival" id="arrival" value="2020-03-24">
+                <input class="input" type="date" name="arrival" id="arrival" onfocus="this.showPicker()">
             </div>
             <div class="input--container">
                 <p class="input--text">Departure Date</p>
-                <input class="input" type="date" name="departure" id="departure" value="2020-03-30">
+                <input class="input" type="date" name="departure" id="departure" onfocus="this.showPicker()">
             </div>
             <button class="submit" type="submit">CHECK AVAILABILITY</button>
         </form>

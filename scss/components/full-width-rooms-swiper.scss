@@ -1,4 +1,4 @@
-#rooms-swiper {
+#rooms-swiper, #rooms-swiper-normal {
     width: 100%;
     margin-top: 0.5rem;
     padding: 0 1rem 0rem 1rem;
@@ -26,12 +26,11 @@
     }
 
     .swiper-slide img {
-        // display: block;
         width: 100%;
         height: 50vh;
         max-width: 100%;
         max-height: 100%;
-        // margin-top: -37px;
+        object-fit: cover;
 
         @media (min-width: 1000px) {
             width: 100%;

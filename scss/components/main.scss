@@ -111,6 +111,10 @@
                     &:hover {
                         cursor: pointer;
                     }
+
+                    &:focus-visible {
+                        outline: none;
+                    }
                 }
     
                 input[type="date"]::-webkit-calendar-picker-indicator {

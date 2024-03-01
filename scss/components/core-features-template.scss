@@ -31,7 +31,7 @@
     .float {
         font-family: Archivo;
         font-weight: 700;
-        font-size: 120px;
+        font-size: 100px;
         color: #2222220A;
         position: absolute;
         height: 100px;
@@ -41,12 +41,12 @@
         @media (min-width: 1000px) {
             height: 229px;
             top: 0px;
-            left: 49%;
+            left: 37%;
         }
 
         @media (min-width: 1350px) {
             top: 0px;
-            left: 74%;
+            left: 43%;
         }
     }
 

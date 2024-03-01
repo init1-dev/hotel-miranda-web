@@ -15,9 +15,10 @@ $bg-grey: #333;
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-@import './home.scss';
-@import './about.scss';
-@import './rooms.scss';
+@import './home_module.scss';
+@import './about_module.scss';
+@import './rooms_module.scss';
+@import './offers_module.scss';
 
 // COMPONENTS
 @import './components/full-width-rooms-swiper.scss';
@@ -28,6 +29,7 @@ $bg-grey: #333;
 @import './components/footer.scss';
 @import './components/main.scss';
 @import './components/pagination.scss';
+@import './components/price-booking.scss';
 
 html, * {
     box-sizing: border-box;
@@ -36,9 +38,19 @@ html, * {
 }
 
 body {
-    min-width: 320px;
+    min-width: 340px;
 
-    
+    .top-fix {
+        
+        .header-bg {
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            position: absolute;
+            height: 74.3px;
+            background-color: #222222;
+        }
+    }
 
     .p {
         font-family: Archivo;

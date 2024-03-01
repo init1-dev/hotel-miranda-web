@@ -59,37 +59,37 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    if($(window).width() > 1000) {
+    $(document).ready(function() {
+        let lastScrollTop = 0;
+        let navbarHeight = $('.header').outerHeight();
+        let hovered = false;
+    
         $(window).scroll(function() {
-            if ($(window).scrollTop() > 100 && hovered === false){
-                $( ".header__nav" ).fadeOut();
-            } else if (hovered === true) { 
-                $('.header__nav').fadeIn();
-            } else {
-                $('.header__nav').fadeIn();
+            if($(window).width() > 1000) {
+                let toTop = $(this).scrollTop();
+        
+                if (toTop > lastScrollTop && toTop > navbarHeight) {
+                    $('.header').css('opacity', '0');
+                } else {
+                    $('.header').css('opacity', '1');
+                }
+                lastScrollTop = toTop;
             }
         });
     
-        $(".header").mouseenter(function (e){
-            if ($('.header__nav').is(':visible') && hovered === false) {
-                e.preventDefault();
-                hovered = true;
-            } else {
-                $(".header__nav").fadeIn();
-                hovered = true;
+        $(".header").mouseenter(function() {
+            hovered = true;
+            $('.header').css('opacity', '1');
+        });
+    
+        $(".header").mouseleave(function() {
+            hovered = false;
+            let toTop = $(window).scrollTop();
+            if (toTop > navbarHeight) {
+                $('.header').css('opacity', '0');
             }
         });
-        
-        $(".header").mouseleave(function (e){
-            if ($(window).scrollTop() > 100) {
-                $(".header__nav").fadeOut();
-                hovered = false;
-            } else {
-                e.preventDefault();
-                hovered = false;
-            }
-        });
-    }    
+    });
 
     loadPage('home.html')
     
@@ -116,6 +116,24 @@ const initializeSwiper = () => {
             1000: {
                 spaceBetween: 30,
                 addSlidesBefore: 1,
+                slidesPerView: 3,
+                centeredSlides: true,
+            }
+        }
+    });
+
+    const roomSwiperNormal = new Swiper("#rooms-swiper-normal", {
+        grabCursor: true,
+        spaceBetween: 40,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            1000: {
+                spaceBetween: 30,
+                initialSlide: 1,
                 slidesPerView: 3,
                 centeredSlides: true,
             }

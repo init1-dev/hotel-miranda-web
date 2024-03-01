@@ -94,12 +94,21 @@
                 align-items: center;
                 margin-bottom: 1rem;
 
+                &:hover {
+                    @media (min-width: 1000px) {
+                        padding-right: 5rem;
+                    }
+                }
+
                 &__arrow {
                     display: none;
                 }
 
                 &:hover > .swiper--item__arrow  {
-                    display: block;
+
+                    @media (min-width: 1000px) {
+                        display: block;
+                    }
                 }
 
                 &:hover, &:hover div > p {
@@ -133,7 +142,6 @@
                     font-weight: 400;
                     font-size: 14px;
                     color: $mainBlack;
-                    padding-right: 5rem;
                 }
             }
         }

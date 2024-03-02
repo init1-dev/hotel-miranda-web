@@ -1256,7 +1256,7 @@
 }
 @media (min-width: 1000px) {
   .contact img {
-    width: 60%;
+    width: 50%;
     margin-top: unset;
   }
 }
@@ -1348,6 +1348,7 @@
   padding: 1rem 3rem;
   margin: 0 auto 5rem auto;
   width: 70%;
+  cursor: pointer;
 }
 @media (min-width: 1000px) {
   .contact form button {
@@ -2393,6 +2394,9 @@
   border: 2px solid #BEAD8E;
   margin-top: 2rem;
   margin-left: 0.5rem;
+}
+.main__form #check-availability-form .submit a {
+  color: white;
 }
 .main__form #check-availability-form .submit:hover {
   cursor: pointer;

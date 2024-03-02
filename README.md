@@ -11,6 +11,6 @@
 # PENDING
 
 - home: ourFoods desktop item on hover, marmalade selection
-- about: improve structure, now working mobile
+- improve contact form styles
 - check possible duplicated css
 - navbar show/hide change to translate instead of opacity

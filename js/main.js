@@ -1,15 +1,12 @@
 let video;
 let hovered = false;
 
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth' // Desplazamiento suave
-    });
-}
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("header__menu-toggle");
+    const menu = document.querySelector(".header__nav--list");
+    video = document.querySelector('.luxuryPlace__video');
 
-const playVideo = () => {
-    if(video !== ''){
+    if(video !== null){
         video.addEventListener('click', function() {
             if(video !== ''){
                 if(video.paused) {
@@ -20,11 +17,6 @@ const playVideo = () => {
             }
         });
     }
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    const menuToggle = document.getElementById("header__menu-toggle");
-    const menu = document.querySelector(".header__nav--list");
 
     menu.querySelectorAll("a").forEach((link) => {
         link.addEventListener("click", function() {

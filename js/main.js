@@ -59,6 +59,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    setTimeout(() => {
+        const form = document.getElementById('check-availability-form');
+    
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            loadPage('room-list.html');
+        })
+    }, 200);
+
     $(document).ready(function() {
         let lastScrollTop = 0;
         let navbarHeight = $('.header').outerHeight();

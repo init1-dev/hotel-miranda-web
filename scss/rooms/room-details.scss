@@ -1,0 +1,98 @@
+.room-details {
+
+    
+
+    .swiper--bg {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+
+        .section-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            .subtitle {
+                width: 95%;
+                color: black;
+                font-family: Old Standard TT;
+                font-weight: 400;
+                font-size: 40px;
+                letter-spacing: -2.40px;
+                
+                @media (min-width: 1000px) {
+                    width: 85%;
+                    font-size: 40px;
+                }
+            }
+        }
+        
+        #rooms-swiper-normal {
+            position: relative;
+            
+            @media (min-width: 1000px) {
+                width: 85vw;
+                margin: auto;
+            }
+
+            .slide-title {
+                display: initial;
+            }
+
+            .slide-title--group, .slide-info {
+                box-shadow: unset;
+                background-color: #fff;
+            }
+
+            .slide-title--group {
+                translate: 0% 30rem;
+                background-color: #f8f8f8;
+
+                @media (min-width: 1000px) {
+                    translate: 0% 23rem;
+                }
+            }
+            
+            .slide-info {
+                translate: unset;
+                margin-bottom: 1rem;
+            }
+
+            .description {
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            .swiper-button-next {
+                top: 30%;
+                
+                @media (min-width: 1000px) {
+                    top: 28%;
+                }
+            }
+
+            .swiper-button-prev {
+                top: 30%;
+
+                @media (min-width: 1000px) {
+                    top: 28%;
+                    left: var(--swiper-navigation-sides-offset, 26%);
+                }
+
+                @media (min-width: 1350px) {
+                    left: var(--swiper-navigation-sides-offset, 27%);
+                }
+            }
+        }
+
+        #rooms-swiper-normal .slide-title, #rooms-swiper-normal .slide-info {
+            opacity: 1;
+        }
+
+        #rooms-swiper-normal .slide-title {
+            background-color: #222222;
+        }
+
+    }
+
+}

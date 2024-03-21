@@ -64,7 +64,7 @@
                 </div>
         
                 <div class="main__middle">
-                    <p class="main__middle--text">Ultimate Room</p>       
+                    <p class="main__middle--text">Ultimate Room</p>
                 </div>
             </div>
             <div class="banner__breadcrumb">
@@ -80,28 +80,41 @@
 
     <section class="room-details">
 
-        <div>
-            <div>
-                ROOM
+        <div class="room-details__room-content">
+            <div class="info">
+                <div class="info_container">
+                    <span>
+                        <h5>DOUBLE BED</h5>
+                        <h2>Luxury Double Bed</h2>
+                    </span>
+                    <span class="price">
+                        <p>$345</p>
+                        <small>/night</small>
+                    </span>
+                </div>
+                <img src="assets/room-images/luxuryroom.png" alt="">
             </div>
 
-            <div>
-                <form id="check-availability-form" action="">
-                    <div class="input--container">
-                        <p class="input--text">Arrival Date</p>
-                        <input class="input" type="date" name="arrival" id="arrival" onfocus="this.showPicker()">
-                    </div>
-                    <div class="input--container">
-                        <p class="input--text">Departure Date</p>
-                        <input class="input" type="date" name="departure" id="departure" onfocus="this.showPicker()">
-                    </div>
-                    <a href="room-list.html">
-                        <button class="submit" type="button">
-                            CHECK AVAILABILITY
-                        </button>
-                    </a>
-                </form>
-            </div>
+            <main class="main">
+                <div class="main__form">
+                    <form id="check-availability-form" action="">
+                        <h4>Check Availability</h4>
+                        <div class="input--container">
+                            <p class="input--text">Check In</p>
+                            <input class="input" type="date" name="arrival" id="arrival" onfocus="this.showPicker()">
+                        </div>
+                        <div class="input--container">
+                            <p class="input--text">Check Out</p>
+                            <input class="input" type="date" name="departure" id="departure" onfocus="this.showPicker()">
+                        </div>
+                        <a href="room-list.html">
+                            <button class="submit" type="button">
+                                CHECK AVAILABILITY
+                            </button>
+                        </a>
+                    </form>
+                </div>
+            </main>
         </div>
 
         <div>

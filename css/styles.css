@@ -1025,24 +1025,15 @@
   display: initial;
 }
 .room-details .swiper--bg #rooms-swiper-normal .slide-title--group, .room-details .swiper--bg #rooms-swiper-normal .slide-info {
-  box-shadow: unset;
   background-color: #fff;
 }
-.room-details .swiper--bg #rooms-swiper-normal .slide-title--group {
-  translate: 0% 30rem;
-  background-color: #f8f8f8;
-}
-@media (min-width: 1000px) {
-  .room-details .swiper--bg #rooms-swiper-normal .slide-title--group {
-    translate: 0% 23rem;
-  }
-}
 .room-details .swiper--bg #rooms-swiper-normal .slide-info {
+  box-shadow: unset;
   translate: unset;
   margin-bottom: 1rem;
 }
 .room-details .swiper--bg #rooms-swiper-normal .description {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
 .room-details .swiper--bg #rooms-swiper-normal .swiper-button-next {

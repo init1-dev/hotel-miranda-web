@@ -208,26 +208,17 @@
             }
 
             .slide-title--group, .slide-info {
-                box-shadow: unset;
                 background-color: #fff;
-            }
-
-            .slide-title--group {
-                translate: 0% 30rem;
-                background-color: #f8f8f8;
-
-                @media (min-width: 1000px) {
-                    translate: 0% 23rem;
-                }
             }
             
             .slide-info {
+                box-shadow: unset;
                 translate: unset;
                 margin-bottom: 1rem;
             }
 
             .description {
-                margin-top: 2rem;
+                margin-top: 0.5rem;
                 margin-bottom: 1rem;
             }
 

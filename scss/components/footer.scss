@@ -263,7 +263,13 @@
             p, a, span {
                 font-family: Roboto;
                 font-weight: 700;
-                font-size: 16px;
+                font-size: 12px;
+                text-align: center;
+
+                @media (min-width: 1000px) {
+                    font-weight: 700;
+                    font-size: 14px;
+                }
 
                 &:not(:last-child) {
                     margin-bottom: 1rem;
@@ -292,6 +298,7 @@
             }
 
             .span--content {
+                text-align: center;
 
                 @media (min-width: 1000px) {
                     margin-right: 5rem;

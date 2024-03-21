@@ -991,7 +991,7 @@
 .room-details .swiper--bg {
   margin-top: 2rem;
   padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 .room-details .swiper--bg .section-header {
   display: flex;
@@ -2462,7 +2462,14 @@
 .footer__section.section--copyright p, .footer__section.section--copyright a, .footer__section.section--copyright span {
   font-family: Roboto;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 12px;
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .footer__section.section--copyright p, .footer__section.section--copyright a, .footer__section.section--copyright span {
+    font-weight: 700;
+    font-size: 14px;
+  }
 }
 .footer__section.section--copyright p:not(:last-child), .footer__section.section--copyright a:not(:last-child), .footer__section.section--copyright span:not(:last-child) {
   margin-bottom: 1rem;
@@ -2485,6 +2492,9 @@
   .footer__section.section--copyright p {
     margin-left: 20%;
   }
+}
+.footer__section.section--copyright .span--content {
+  text-align: center;
 }
 @media (min-width: 1000px) {
   .footer__section.section--copyright .span--content {

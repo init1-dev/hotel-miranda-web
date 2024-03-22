@@ -1,5 +1,26 @@
 .room-details {
 
+    .section-header {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+
+        .subtitle {
+            width: 95%;
+            color: black;
+            font-family: Old Standard TT;
+            font-weight: 400;
+            font-size: 35px;
+            letter-spacing: -2.40px;
+            
+            @media (min-width: 1000px) {
+                width: 85%;
+            }
+        }
+    }
+
     .main {
         padding: 0rem 0rem 0rem 0rem;
         margin-top: 2rem;
@@ -70,12 +91,14 @@
     &__room-content {
         padding: 1rem;
         width: 100%;
-        
+        margin-top: 0;
 
         @media (min-width: 1000px) {
             display: flex;
             justify-content: center;
             gap: 2rem;
+            margin: 1rem auto 2rem auto;
+            width: 85vw;
         }
 
         .info {
@@ -121,7 +144,11 @@
                     letter-spacing: -1.440000057220459px;
 
                     @media (min-width: 1000px) {
-                        font-size: 48px;
+                        font-size: 34px;
+                    }
+
+                    @media (min-width: 1350px) {
+                        font-size: 44px;
                     }
                 }
 
@@ -162,7 +189,7 @@
                 aspect-ratio: 16/9;
 
                 @media (min-width: 1000px) {
-                    max-height: 25rem;
+                    height: 25rem;
                     width: 100%;
                 }
             }
@@ -170,30 +197,47 @@
 
     }
 
-    .swiper--bg {
-        margin-top: 2rem;
-        padding-top: 2rem;
-        padding-bottom: 3rem;
+    .info-container {
+        display: flex;
+        width: 100%;
+        padding: 0 1rem 0 1rem;
+        flex-direction: column;
+        margin: 2rem auto;
 
-        .section-header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-    
-            .subtitle {
-                width: 95%;
-                color: black;
-                font-family: Old Standard TT;
-                font-weight: 400;
-                font-size: 40px;
-                letter-spacing: -2.40px;
-                
-                @media (min-width: 1000px) {
-                    width: 85%;
-                    font-size: 40px;
-                }
-            }
+        @media (min-width: 1000px) {
+            margin: 2rem auto;
+            width: 85vw;
         }
+
+        @media (min-width: 1350px) {
+            margin: 2rem auto;
+            width: 70vw;
+        }
+
+        p {
+            
+        }
+    }
+
+    .room-description {
+        
+    }
+
+    .amenities {
+        
+    }
+
+    .graphic {
+        
+    }
+
+    .cancelation {
+        
+    }
+
+    .swiper--bg {
+        margin-top: 3rem;
+        padding-bottom: 3rem;
         
         #rooms-swiper-normal {
             position: relative;
@@ -205,6 +249,19 @@
 
             .slide-title {
                 display: initial;
+
+                .slide-title--group {
+                    translate: 0 1rem;
+
+                    @media (min-width: 1000px) {
+                        translate: 0 23rem;
+                        margin: 0 1rem 0 1rem;
+                    }
+
+                    @media (min-width: 1350px) {
+                        margin: 0 3rem 0 3rem;
+                    }
+                }
             }
 
             .slide-title--group, .slide-info {
@@ -212,14 +269,25 @@
             }
             
             .slide-info {
+                margin-top: 0;
                 box-shadow: unset;
                 translate: unset;
                 margin-bottom: 1rem;
+
+                @media (min-width: 1000px) {
+                    margin-top: 1rem;
+                }
             }
 
             .description {
                 margin-top: 0.5rem;
                 margin-bottom: 1rem;
+                flex-direction: column;
+
+                @media (min-width: 1000px) {
+                    max-width: 64rem;
+                    margin: 1rem auto;
+                }
             }
 
             .swiper-button-next {

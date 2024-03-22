@@ -1074,6 +1074,126 @@
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
 }
+.room-details .amenities .amenities-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 0.5rem;
+  gap: 1.5rem;
+}
+@media (min-width: 1000px) {
+  .room-details .amenities .amenities-list {
+    margin-top: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.room-details .amenities .amenities-list .amenity {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.room-details .amenities .amenities-list .amenity i {
+  color: #BEAD8E;
+}
+.room-details .amenities .amenities-list .amenity p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18.75px;
+  color: #777777;
+}
+@media (min-width: 1000px) {
+  .room-details .amenities .amenities-list .amenity p {
+    font-size: 16px;
+  }
+}
+.room-details .graphic {
+  margin: 5rem 0 5rem 0;
+}
+@media (min-width: 1000px) {
+  .room-details .graphic {
+    margin: 6rem auto;
+    width: 85vw;
+  }
+}
+@media (min-width: 1350px) {
+  .room-details .graphic {
+    margin: 6rem auto;
+    width: 70vw;
+  }
+}
+@media (min-width: 1000px) {
+  .room-details .graphic .container {
+    width: 20rem;
+    padding: 2rem 2rem;
+    box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.2705882353);
+  }
+}
+.room-details .graphic .container .image {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.room-details .graphic .container .image .circle {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #D5D5D5;
+}
+.room-details .graphic .container .image .check {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: 30px;
+  height: 30px;
+  top: 4%;
+  left: 75%;
+  border-radius: 50%;
+  font-size: 30px;
+  background-color: #BDAC8D;
+  color: white;
+}
+.room-details .graphic .container .image .check i {
+  font-size: 15px;
+  font-weight: 600;
+}
+.room-details .graphic .container .name {
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+}
+.room-details .graphic .container .name h4 {
+  font-family: Old Standard TT;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.8px;
+  color: #222222;
+  margin-bottom: 0.5rem;
+}
+.room-details .graphic .container .name small {
+  font-family: Archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.8px;
+  color: #BDAC8D;
+  text-transform: uppercase;
+}
+.room-details .graphic .container .text {
+  text-align: center;
+  font-family: Archivo;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #777777;
+}
+@media (min-width: 1000px) {
+  .room-details .cancelation {
+    margin-bottom: 5rem;
+  }
+}
 .room-details .cancelation h4 {
   font-family: Old Standard TT;
   font-size: 30px;

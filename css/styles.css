@@ -920,8 +920,8 @@
   .room-details__room-content {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    margin: 1rem auto 2rem auto;
+    gap: 5rem;
+    margin: 1rem 5rem 2rem 5rem;
     width: 85vw;
   }
 }
@@ -948,8 +948,13 @@
     left: 0px;
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1rem;
     box-shadow: 3px 3px 4px -3px black;
+  }
+}
+@media (min-width: 1350px) {
+  .room-details__room-content .info .info_container {
+    gap: 2rem;
   }
 }
 .room-details__room-content .info .info_container h5 {
@@ -970,7 +975,7 @@
 }
 @media (min-width: 1000px) {
   .room-details__room-content .info .info_container h2 {
-    font-size: 34px;
+    font-size: 32px;
   }
 }
 @media (min-width: 1350px) {
@@ -996,6 +1001,16 @@
   font-size: 32px;
   font-weight: 700;
   line-height: 43px;
+}
+@media (min-width: 1000px) {
+  .room-details__room-content .info .info_container .price p {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1350px) {
+  .room-details__room-content .info .info_container .price p {
+    font-size: 30px;
+  }
 }
 .room-details__room-content .info .info_container .price small {
   font-family: Archivo;
@@ -1034,6 +1049,51 @@
     margin: 2rem auto;
     width: 70vw;
   }
+}
+.room-details .room-description {
+  margin-top: 3rem;
+}
+.room-details .room-description p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #777777;
+}
+.room-details .amenities h4 {
+  font-family: Old Standard TT;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #222222;
+}
+.room-details .amenities hr {
+  background-color: #f1f1f1;
+  height: 1px;
+  border: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.room-details .cancelation h4 {
+  font-family: Old Standard TT;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #222222;
+}
+.room-details .cancelation hr {
+  background-color: #f1f1f1;
+  height: 1px;
+  border: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.room-details .cancelation p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #777777;
 }
 .room-details .swiper--bg {
   margin-top: 3rem;

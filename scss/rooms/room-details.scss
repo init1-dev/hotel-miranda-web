@@ -96,8 +96,8 @@
         @media (min-width: 1000px) {
             display: flex;
             justify-content: center;
-            gap: 2rem;
-            margin: 1rem auto 2rem auto;
+            gap: 5rem;
+            margin: 1rem 5rem 2rem 5rem;
             width: 85vw;
         }
 
@@ -122,9 +122,14 @@
                     left: 0px;
                     display: flex;
                     justify-content: space-between;
-                    gap: 2rem;
+                    gap: 1rem;
                     box-shadow: 3px 3px 4px -3px black;
                 }
+
+                @media (min-width: 1350px) {
+                    gap: 2rem;
+                }
+
 
                 h5 {
                     font-family: Archivo;
@@ -144,7 +149,7 @@
                     letter-spacing: -1.440000057220459px;
 
                     @media (min-width: 1000px) {
-                        font-size: 34px;
+                        font-size: 32px;
                     }
 
                     @media (min-width: 1350px) {
@@ -170,6 +175,14 @@
                         font-size: 32px;
                         font-weight: 700;
                         line-height: 43px;
+
+                        @media (min-width: 1000px) {
+                            font-size: 25px;
+                        }
+
+                        @media (min-width: 1350px) {
+                            font-size: 30px;
+                        }
                     }
 
                     small {
@@ -220,11 +233,37 @@
     }
 
     .room-description {
-        
+        margin-top: 3rem;
+
+        p {
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #777777;
+
+            @media (min-width: 1000px) {
+                
+            }
+        }
     }
 
     .amenities {
-        
+        h4 {
+            font-family: Old Standard TT;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 30px;
+            color: #222222;
+        }
+
+        hr {
+            background-color: #f1f1f1;
+            height: 1px;
+            border: 0;
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
     }
 
     .graphic {
@@ -232,7 +271,30 @@
     }
 
     .cancelation {
-        
+
+        h4 {
+            font-family: Old Standard TT;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 30px;
+            color: #222222;
+        }
+
+        hr {
+            background-color: #f1f1f1;
+            height: 1px;
+            border: 0;
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #777777;
+        }
     }
 
     .swiper--bg {

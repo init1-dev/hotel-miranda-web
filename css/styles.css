@@ -1052,6 +1052,12 @@
 }
 .room-details .room-description {
   margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+@media (min-width: 1000px) {
+  .room-details .room-description {
+    margin-bottom: 4rem;
+  }
 }
 .room-details .room-description p {
   font-family: Roboto;

@@ -234,6 +234,11 @@
 
     .room-description {
         margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        @media (min-width: 1000px) {
+            margin-bottom: 4rem;
+        }
 
         p {
             font-family: Roboto;

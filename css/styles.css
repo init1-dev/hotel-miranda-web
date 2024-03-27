@@ -802,6 +802,16 @@
   right: -2px;
   z-index: -1;
 }
+@media (min-width: 1000px) {
+  .about__section .black-features #coreFeatures-swipper-black .swiper-wrapper .swiper-slide .coreFeatures-swipper--content .swiper--item .float {
+    font-size: 100px;
+  }
+}
+@media (min-width: 1350px) {
+  .about__section .black-features #coreFeatures-swipper-black .swiper-wrapper .swiper-slide .coreFeatures-swipper--content .swiper--item .float {
+    font-size: 120px;
+  }
+}
 .about__section .black-features #coreFeatures-swipper-black .swiper-wrapper .swiper-slide .coreFeatures-swipper--content .swiper--item .swipper--title {
   padding-left: 0;
   margin-bottom: 1rem;

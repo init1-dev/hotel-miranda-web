@@ -70,6 +70,14 @@
                                 left: unset;
                                 right: -2px;
                                 z-index: -1;
+
+                                @media (min-width: 1000px) {
+                                    font-size: 100px;
+                                }
+
+                                @media (min-width: 1350px) {
+                                    font-size: 120px;
+                                }
                             }
 
                             .swipper--title {

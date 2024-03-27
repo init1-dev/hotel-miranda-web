@@ -1,0 +1,105 @@
+.about__section {
+
+    .black-features {
+        background-color: #222222;
+        margin: unset;
+        padding: 1rem 1.5rem 4rem 1.5rem;
+
+        @media (min-width: 1000px) {
+            padding: 1rem 10% 4rem 10%;
+        }
+        
+        @media (min-width: 1350px) {
+            padding: 1rem 18% 4rem 18%;
+        }
+
+        #coreFeatures-swipper-black {
+            margin-top: 1.5rem;
+
+            @media (min-width: 1000px) {
+                margin-top: 4rem;
+            }
+            
+            .swipper-title {
+
+                .coreFeatures--title {
+                    color: white;
+                }
+
+                .bigText {
+                    color: white;
+                    margin-left: 0;
+                    margin-bottom: 2rem;
+
+                    @media (min-width: 1000px) {
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+
+            .swiper-wrapper {
+                justify-content: space-between;
+                
+                .swiper-slide {
+                    background-color: #292929;
+                    padding: 5% 2rem 5% 2rem;
+                    aspect-ratio: 16/9;
+
+                    @media (min-width: 1000px) {
+                        padding: 0 2rem 0 2rem;
+                        aspect-ratio: 1/1;
+                        height: 350px !important;
+                    }
+
+                    .coreFeatures-swipper--content {
+                        
+                        .swiper--item {
+                            
+                            img {
+                                padding: 15% 0 2rem 1rem;
+
+                                @media (min-width: 1000px) {
+                                    padding: 22% 0 2rem 1rem;
+                                }
+                            }
+
+                            .float {
+                                font-size: 120px;
+                                color: #222222;
+                                top: -15px;
+                                left: unset;
+                                right: -2px;
+                                z-index: -1;
+                            }
+
+                            .swipper--title {
+                                padding-left: 0;
+                                margin-bottom: 1rem;
+                                font-size: 26px;
+
+                                @media (min-width: 1000px) {
+                                    font-size: 23px;
+                                }
+                                
+                                @media (min-width: 1350px) {
+                                    font-size: 26px;
+                                }
+                            }
+                
+                            .swipper--subtitle {
+                                padding-left: 0;
+                            }
+
+                            div {
+
+                                p {
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

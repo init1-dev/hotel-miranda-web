@@ -119,6 +119,24 @@ const coreFeaturesSwiper = new Swiper('#coreFeatures-swipper', {
     }
 });
 
+const coreFeaturesSwiperBlack = new Swiper('#coreFeatures-swipper-black', {
+    slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        1000: {
+            slidesPerView: 3,
+            grid: {
+                rows: 2,
+                fill: 'row',
+            },
+            spaceBetween: 25,
+        }
+    }
+});
+
 const foodMenuSwipper = new Swiper('#menu-swipper', {
     slidesPerView: 1,
     pagination: {

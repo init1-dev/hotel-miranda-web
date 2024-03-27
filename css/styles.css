@@ -1813,7 +1813,7 @@
 }
 @media (min-width: 1000px) {
   .contact .contact__top-info .container {
-    gap: 1rem;
+    margin: 0 0 4rem 0;
     padding: 2rem;
     width: 50%;
   }
@@ -1828,7 +1828,7 @@
   text-align: left;
   color: #F8F8F8;
   z-index: -1;
-  translate: 146px -58px;
+  translate: 166px -58px;
 }
 @media (min-width: 1000px) {
   .contact .contact__top-info .container .float-text {
@@ -1838,6 +1838,7 @@
 .contact .contact__top-info .container i {
   color: #BEAD8E;
   font-size: 25px;
+  margin-right: 1rem;
 }
 .contact .contact__top-info .container__text .title {
   font-family: Old Standard TT;
@@ -1862,20 +1863,21 @@
 }
 @media (min-width: 1000px) {
   .contact img {
-    width: 50%;
+    width: 45%;
     margin-top: unset;
   }
 }
 .contact form {
   width: 90%;
-  margin-top: 3rem;
+  margin-top: 1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 1000px) {
   .contact form {
-    width: 50%;
+    margin-top: 2rem;
+    width: 45%;
   }
 }
 .contact form .input-text {
@@ -1930,8 +1932,7 @@
 .contact form .text-area {
   resize: none;
   width: 100%;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   background-color: #F8F8F8;
   border: unset;
   padding: 1rem;
@@ -1952,14 +1953,9 @@
   border: none;
   color: white;
   padding: 1rem 3rem;
-  margin: 0 auto 5rem auto;
-  width: 70%;
+  width: 100%;
   cursor: pointer;
-}
-@media (min-width: 1000px) {
-  .contact form button {
-    width: 40%;
-  }
+  margin-bottom: 5rem;
 }
 
 #rooms-swiper, #rooms-swiper-normal {

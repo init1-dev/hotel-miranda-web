@@ -49,7 +49,7 @@
     &__features {
         margin: 0 auto;
         display: block;
-        width: 80.5%;
+        width: 100%;
 
         &-img {
             width: 100%;
@@ -58,6 +58,10 @@
             aspect-ratio: 1/1;
             object-fit: cover;
             object-position: top;
+        }
+
+        &-img:nth-of-type(2) {
+            object-position: center;
         }
 
         .luxury {

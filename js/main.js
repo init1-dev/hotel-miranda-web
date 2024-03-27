@@ -1,20 +1,27 @@
-let video;
 let hovered = false;
 
 document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.getElementById("header__menu-toggle");
     const menu = document.querySelector(".header__nav--list");
-    video = document.querySelector('.luxuryPlace__video');
 
-    if(video !== null){
-        video.addEventListener('click', function() {
-            if(video !== ''){
-                if(video.paused) {
-                    video.play();
-                } else {
-                    video.pause();
-                }
+    let video = document.getElementById("luxuryVideo");
+    if(location.pathname === "/index.html"){
+        video.controls = false;
+
+        $('.play-button').click(function() {
+            if (video.paused) {
+                video.play();
             }
+        });
+
+        video.addEventListener('play', function() {
+            video.controls = true;
+            $(".play-button").css("display", "none")
+        });
+
+        video.addEventListener('pause', function() {
+            video.controls = false;
+            $(".play-button").css("display", "block")
         });
     }
 

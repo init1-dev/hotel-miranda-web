@@ -41,33 +41,33 @@ document.addEventListener("DOMContentLoaded", () => {
     $(document).ready(function() {
         let lastScrollTop = 0;
         let navbarHeight = $('.header').outerHeight();
-        let hovered = false;
     
         $(window).scroll(function() {
             if($(window).width() > 1000) {
                 let toTop = $(this).scrollTop();
         
                 if (toTop > lastScrollTop && toTop > navbarHeight) {
-                    $('.header').css('opacity', '0');
+                    $('.header').css('transform', 'translate3d(0, -200px, 0');
                 } else {
-                    $('.header').css('opacity', '1');
+                    $('.header').css('transform', 'unset');
                 }
                 lastScrollTop = toTop;
             }
         });
-    
-        $(".header").mouseenter(function() {
-            hovered = true;
-            $('.header').css('opacity', '1');
-        });
-    
-        $(".header").mouseleave(function() {
-            hovered = false;
-            let toTop = $(window).scrollTop();
-            if (toTop > navbarHeight) {
-                $('.header').css('opacity', '0');
+
+        $(document).mousemove(function(event) {
+            if($(window).width() > 1000) {
+                let mouseY = event.clientY;
+                if(mouseY < 200) {
+                    $('.header').css('transform', 'unset');
+                } else {
+                    let toTop = $(window).scrollTop();
+                    if(toTop > navbarHeight) {
+                        $('.header').css('transform', 'translate3d(0, -200px, 0');
+                    }
+                }
             }
-        });
+        })
     });
 });
 

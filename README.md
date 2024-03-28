@@ -2,7 +2,6 @@
 
 # TODO
 
-- about
 - replace fonts for scss variables
 - home: check avaibility inputs onFocus="this.showPicker()" to js instead of html
 

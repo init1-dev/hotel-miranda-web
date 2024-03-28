@@ -3,12 +3,19 @@ let hovered = false;
 document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.getElementById("header__menu-toggle");
     const menu = document.querySelector(".header__nav--list");
+    const path = location.pathname;
 
     let video = document.getElementById("luxuryVideo");
-    if(location.pathname === "/index.html"){
+    if(path === "/index.html" || path === "/about.html"){
         video.controls = false;
 
         $('.play-button').click(function() {
+            if (video.paused) {
+                video.play();
+            }
+        });
+
+        $('#luxuryVideo').click(function() {
             if (video.paused) {
                 video.play();
             }

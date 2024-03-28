@@ -55,7 +55,7 @@
     }
 
     .text__container {
-        margin: 3rem 1.5rem;
+        margin: 3rem 1.5rem 1rem 1.5rem;
         text-align: center;
 
         @media (min-width: 1000px) {
@@ -86,8 +86,6 @@
 
             @media (min-width: 1350px) {
                 font-size: 60px;
-                line-height: 75px;
-                letter-spacing: -2.16px;
             }
         }
     }
@@ -95,14 +93,12 @@
     .squares__container {
         margin: 0 1.5rem 2rem 1.5rem;
         text-align: center;
-        height: 260px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
         @media (min-width: 1000px) {
             margin: 3rem auto;
             width: 75%;
-            height: auto;
             margin-left: auto;
             margin-right: auto;
             grid-template-columns: repeat(5, 1fr);
@@ -148,6 +144,118 @@
                 display: block;
             }
         }
+    }
+
+    .restaurant {
+        margin: 2rem 1.5rem 4rem 1.5rem;
+        text-align: center;
+        display: grid;
+        grid-template-columns: (100%);
+        box-shadow: 0px 5px 15px -15px black;
+
+        @media (min-width: 1000px) {
+            padding: 2%;
+            margin: 5rem auto 7rem auto;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            grid-template-columns: (45% 55%);
+        }
+
+        @media (min-width: 1350px) {
+            width: 65%;
+        }
+
+        .restaurant__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+
+            @media (min-width: 1000px) {
+    
+            }
+            
+            @media (min-width: 1350px) {
+                
+            }
+        }
+
+        .restaurant__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 1.5rem;
+            padding: 1rem 1rem 0 1rem;
+
+            @media (min-width: 1000px) {
+                margin-top: unset;
+                padding: 1rem unset 1rem 2rem;
+            }
+
+            small {
+                font-family: Archivo;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 15.23px;
+                letter-spacing: 2.8px;
+                color: #777777;
+                text-align: left;
+
+                @media (min-width: 1000px) {
+                    font-size: 13px;
+                }
+                
+                @media (min-width: 1350px) {
+                    font-size: 14px;
+                }
+            }
+
+            h3 {
+                margin-top: 1.5rem;
+                font-family: Old Standard TT;
+                font-size: 40px;
+                font-weight: 400;
+                line-height: 49.44px;
+                letter-spacing: -1.05px;
+                text-align: left;
+                color: #222222;
+                
+                @media (min-width: 1000px) {
+                    font-size: 32px;
+                }
+                
+                @media (min-width: 1350px) {
+                    font-size: 40px;
+                }
+            }
+    
+            p {
+                margin-top: 0.5rem;
+                font-family: Archivo;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: left;
+                color: #777777;
+            }
+
+            button {
+                margin-top: 1.5rem;
+                font-family: Archivo;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 15.23px;
+                letter-spacing: 2.8px;
+                margin-bottom: 1rem;
+
+                @media (min-width: 1000px) {
+                    margin-top: 1rem;
+                    margin-bottom: unset;
+                }
+            }
+        }
+
     }
 
     .black-features {
@@ -260,4 +368,12 @@
             }
         }
     }
+}
+
+@media (min-width: 1000px) {
+    
+}
+
+@media (min-width: 1350px) {
+    
 }

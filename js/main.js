@@ -185,3 +185,18 @@ const foodImageSwipper = new Swiper('#images-swipper', {
         }
     }
 });
+
+const aboutSwiper = new Swiper('#counter-swipper', {
+    slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        1000: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            autoHeight: true,
+        }
+    }
+});

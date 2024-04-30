@@ -339,32 +339,51 @@
                 margin: auto;
             }
 
-            .slide-title {
-                display: initial;
-            }
+            // .slide-title {
+            //     display: initial;
+            // }
 
-            .slide-title--group, .slide-info {
-                box-shadow: unset;
-                background-color: #fff;
-            }
+            .swiper-slide {
 
-            .slide-title--group {
-                translate: 0% 30rem;
-                background-color: #f8f8f8;
-
-                @media (min-width: 1000px) {
-                    translate: 0% 23rem;
+                .slide-title, .slide-info {
+                    box-shadow: unset;
+                    background-color: #fff;
                 }
-            }
-            
-            .slide-info {
-                translate: unset;
-                margin-bottom: 1rem;
-            }
+    
+                .slide-title {
+                    width: 100%;
+                    background-color: #f8f8f8;
+                    min-height: 37px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;
+    
+                    @media (min-width: 1000px) {
+                        position: absolute;
+                        width: 80%;
+                        margin: 0 10%;
+                        translate: 0% 20.7rem;
+                    }
 
-            .description {
-                margin-top: 2rem;
-                margin-bottom: 1rem;
+                    i {
+                        font-size: 13px;
+                    }
+                }
+                
+                .slide-info {
+                    translate: unset;
+                    margin-bottom: 1rem;
+                }
+    
+                .description {
+                    margin-bottom: 1rem;
+    
+                    @media (min-width: 1000px) {
+                        margin-top: 1rem;
+                    }
+                }
+
             }
 
             .swiper-button-next {
@@ -390,11 +409,6 @@
         #rooms-swiper-normal .slide-title, #rooms-swiper-normal .slide-info {
             opacity: 1;
         }
-
-        #rooms-swiper-normal .slide-title {
-            background-color: #222222;
-        }
-
     }
 
 
